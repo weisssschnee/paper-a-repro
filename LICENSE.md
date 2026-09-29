@@ -1,35 +1,28 @@
-# Licenses and scope
+# License
 
-- The five Python scripts in `scripts/` are licensed under the MIT License
-  below, to the extent the Paper A contributors hold the relevant rights.
-- The original research-generated ledgers, results, closures, attestations,
-  figures, documentation, and manifest in this package are licensed under
-  [Creative Commons Attribution 4.0 International (CC BY 4.0)]
-  (https://creativecommons.org/licenses/by/4.0/), to the extent the Paper A
-  contributors hold the relevant rights.
-- This does **not** grant rights to any upstream market data, third-party
-  material, external data products, or artifacts not included in this package.
-  Their original terms continue to apply. Hashes and descriptions in the
-  manifest do not imply that withheld files or source datasets are licensed.
+Copyright (c) 2026 the Paper A authors. All rights reserved except as stated
+below.
 
-## MIT License (Python scripts only)
+This package is released for noncommercial scientific reproduction, checking,
+and citation of the paper "When Should Search Reformulate?".
 
-Copyright (c) 2026 Paper A contributors
+1. Scripts (`scripts/`): PolyForm Strict License 1.0.0, full text in
+   `LICENSE-SCRIPTS.md` (<https://polyformproject.org/licenses/strict/1.0.0>).
+   You may run and study them for noncommercial purposes. You may not
+   distribute them or make changes or new works based on them.
+2. Research materials (ledgers, results, closures, attestations, protocol
+   files, figures, frozen matrix and inference, documentation, manifest):
+   Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+   (CC BY-NC-ND 4.0), <https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode>.
+3. Commercial use of any part of this package, including use in trading,
+   investment, or asset-management activity, or in commercial products or
+   services, requires separate written permission from the authors.
+4. Not licensed: underlying market data, upstream datasets, third-party
+   material, and every file listed as withheld in MANIFEST.json. Hashes and
+   descriptions of withheld files grant no rights in them. No trademark rights
+   are granted.
+5. Provided as is, without warranty of any kind. Nothing here is investment,
+   trading, or financial advice.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Quoting short excerpts with attribution in scholarly work, and any use
+permitted by applicable law (e.g. fair use or fair dealing), is unaffected.

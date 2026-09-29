@@ -58,5 +58,12 @@ line endings differ).
 No Q0 or out-of-sample data were read by any artifact here (`q0_read` and
 `oos_read` are false throughout).
 
-See LICENSE.md for the code and research-material license scopes. No underlying
-market data, upstream datasets, or withheld artifacts are licensed here.
+## License
+
+Noncommercial use only; see LICENSE.md. The scripts are under the PolyForm
+Strict License 1.0.0 (run and study only; no redistribution or modification).
+The research materials are under CC BY-NC-ND 4.0. Reproducing, checking, and
+citing the paper's results is permitted. Any commercial use requires separate
+written permission from the authors. No underlying market data, upstream
+datasets, or withheld artifacts are licensed here. Nothing in this package is
+investment, trading, or financial advice.

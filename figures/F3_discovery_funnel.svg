@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="300" viewBox="0 0 1180 300">
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:28px;fill:currentColor}.small{font-size:24px}.title{font-size:36px;font-weight:700}.label{font-weight:700}.axis{stroke:currentColor;stroke-width:2}.ci{stroke:currentColor;stroke-width:4}.box{fill:none;stroke:currentColor;stroke-width:2.5}.thin{fill:none;stroke:currentColor;stroke-width:2}.dot{fill:currentColor}.mean{fill:none;stroke:currentColor;stroke-width:4}</style>
+<rect x="25" y="100" width="120" height="92" rx="8" class="box"/>
+<text x="85.0" y="133" text-anchor="middle">Hypothesis</text>
+<line x1="145" y1="146" x2="179" y2="146" class="axis"/>
+<polyline points="173,138 179,146 173,154" class="thin"/>
+<rect x="187" y="100" width="140" height="92" rx="8" class="box"/>
+<text x="257.0" y="126" text-anchor="middle">Economic</text>
+<text x="257.0" y="156" text-anchor="middle">basin</text>
+<line x1="327" y1="146" x2="361" y2="146" class="axis"/>
+<polyline points="355,138 361,146 355,154" class="thin"/>
+<rect x="369" y="100" width="145" height="92" rx="8" class="box"/>
+<text x="441.5" y="126" text-anchor="middle">Replicated</text>
+<text x="441.5" y="156" text-anchor="middle">basin</text>
+<line x1="514" y1="146" x2="548" y2="146" class="axis"/>
+<polyline points="542,138 548,146 542,154" class="thin"/>
+<rect x="556" y="100" width="170" height="92" rx="8" class="box"/>
+<text x="641.0" y="126" text-anchor="middle">Net-positive</text>
+<text x="641.0" y="156" text-anchor="middle">realization</text>
+<line x1="726" y1="146" x2="760" y2="146" class="axis"/>
+<polyline points="754,138 760,146 754,154" class="thin"/>
+<rect x="768" y="100" width="140" height="92" rx="8" class="box"/>
+<text x="838.0" y="126" text-anchor="middle">Formal</text>
+<text x="838.0" y="156" text-anchor="middle">admission</text>
+<line x1="908" y1="146" x2="942" y2="146" class="axis"/>
+<polyline points="936,138 942,146 936,154" class="thin"/>
+<rect x="950" y="100" width="160" height="92" rx="8" class="box"/>
+<text x="1030.0" y="126" text-anchor="middle">Scoped-new</text>
+<text x="1030.0" y="156" text-anchor="middle">admission</text>
+</svg>

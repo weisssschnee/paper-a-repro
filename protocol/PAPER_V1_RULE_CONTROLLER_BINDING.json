@@ -1,0 +1,112 @@
+{
+  "schema": "paper-v1-frozen-rule-controller-v1",
+  "decision": "RULE_DECISION_CORE_FROZEN_BEFORE_PROSPECTIVE_PILOT",
+  "development_sources": ["V0", "E1"],
+  "development_sources_are_not_independent_validation": true,
+  "evidence_packet_schema": "protocol/PAPER_V1_EVIDENCE_PACKET_SCHEMA.json",
+  "intervention_ontology": "protocol/PAPER_V1_INTERVENTION_ONTOLOGY.json",
+  "decision_cadence_evaluator_calls": 64,
+  "policy": {
+    "type": "deterministic_first_match_priority_table",
+    "free_text_interpretation_allowed": false,
+    "rules": [
+      {
+        "priority": 1,
+        "rule_id": "R01_REPRESENTATION_CONSTRUCTIBILITY",
+        "condition": "constructibility.status in {FAIL, DEGENERATE}",
+        "action": "CHANGE_REPRESENTATION"
+      },
+      {
+        "priority": 2,
+        "rule_id": "R02_HARVESTED_OR_DUPLICATE_FORMAL_ADMISSION",
+        "condition": "court.formal_eligible == true and novelty.status in {NEW, DUPLICATE}",
+        "action": "CHANGE_MECHANISM",
+        "note": "bank a NEW admission before opening the next mechanism; a DUPLICATE is not parameter-tuned into being called new"
+      },
+      {
+        "priority": 3,
+        "rule_id": "R03_SPARSE_CONTEXT_SUPPORT",
+        "condition": "constructibility.status == PASS and active_assets is known and active_assets < 12, OR EXTENDED24 active_block_fraction is known and active_block_fraction < 0.25, OR FULLTRAIN active_time_fraction is known and active_time_fraction < 0.02",
+        "action": "CHANGE_CONTEXT"
+      },
+      {
+        "priority": 4,
+        "rule_id": "R04_NO_GROSS_BASIN_AFTER_PATIENCE",
+        "condition": "decision_epochs_in_current_formulation >= 2 and window_summary.best_gross_sum is known and best_gross_sum <= 0",
+        "action": "CHANGE_MECHANISM",
+        "patience_epochs": 2,
+        "equivalent_patience_calls": 128
+      },
+      {
+        "priority": 5,
+        "rule_id": "R05_COST_DESTRUCTION_WITH_ADEQUATE_SUPPORT",
+        "condition": "gross_positive == true and net_positive == false and cost_exceeds_gross == true and adequate_support == true",
+        "adequate_support_definition": "active_assets >= 12 and ((EXTENDED24 and active_block_fraction >= 0.75) or (FULLTRAIN and active_time_fraction >= 0.02))",
+        "action_sequence": [
+          {
+            "if": "state_action_changes_in_current_basin < 1",
+            "action": "CHANGE_STATE_ACTION"
+          },
+          {
+            "else_if": "parameter_changes_in_current_formulation < 1",
+            "action": "CHANGE_PARAMETERS"
+          },
+          {
+            "else": "ABANDON_BASIN"
+          }
+        ]
+      },
+      {
+        "priority": 6,
+        "rule_id": "R06_REPLICATION_COLLAPSE",
+        "condition": "evaluation_stage == EXTENDED24 and active_block_fraction >= 0.75 and positive_month_pair_means is known and positive_month_pair_means <= 2",
+        "action": "CHANGE_MECHANISM",
+        "note": "cost-destruction rule has higher priority; this branch is for replication failure not already dominated by the stronger execution/cost signature"
+      },
+      {
+        "priority": 7,
+        "rule_id": "R07_LOCAL_IMPROVEMENT",
+        "condition": "optimizer_active == true and (gross_improvement > 0 or net_improvement > 0) and no higher-priority trigger fired",
+        "action": "CONTINUE_LOCAL_SEARCH",
+        "minimum_material_improvement": 0.0
+      },
+      {
+        "priority": 8,
+        "rule_id": "R08_LOCAL_STAGNATION",
+        "condition": "optimizer_active == true and stagnation_steps >= 2 and no higher-priority trigger fired",
+        "action_sequence": [
+          {
+            "if": "parameter_changes_in_current_formulation < 1",
+            "action": "CHANGE_PARAMETERS"
+          },
+          {
+            "else": "ABANDON_BASIN"
+          }
+        ],
+        "stagnation_patience_epochs": 2
+      },
+      {
+        "priority": 9,
+        "rule_id": "R09_DEFAULT",
+        "condition": "otherwise",
+        "action": "CONTINUE_LOCAL_SEARCH"
+      }
+    ]
+  },
+  "action_payload_policy": {
+    "status": "BLOCKED_ON_FROZEN_MUTATION_BANK",
+    "selection_rule": "for CHANGE_* actions, select the first unused legal payload in deterministic frozen order for the requested intervention class; if none remains, ABANDON_BASIN",
+    "required_future_binding": "PAPER_V1_FORMULATION_MUTATION_BANK.json",
+    "outcome_based_payload_selection": false
+  },
+  "anti_hindsight": {
+    "pilot_outcomes_may_tune_rules": false,
+    "comparative_v1_outcomes_may_tune_rules": false,
+    "software_bug_fix_requires_new_hash": true,
+    "semantic_rule_change_requires_rule_v2_and_restart": true
+  },
+  "launch_ready": false,
+  "launch_blocker": "freeze deterministic formulation mutation bank/payload ordering",
+  "q0_read": false,
+  "oos_read": false
+}

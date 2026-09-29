@@ -1,0 +1,47 @@
+{
+  "arm": "L",
+  "decision": "PASS_PROSPECTIVE_MAIN_EPOCH_COMPLETE_AFTER_HANDOFF_RECOVERY",
+  "decision_epoch": 12,
+  "evidence_packet_sha256": "9e696c9f8bb40d76c529718fef1d0d13a22ca9c63a545f2b7b3cc5e7146fb9bf",
+  "execution_git_head": "8635324e37d9afef54e6ee8ebe454cb99f564bd9",
+  "extended_gate": {
+    "checks": {
+      "active_block_count_ge_3": true,
+      "gross_positive": true,
+      "positive_block_count_ge_2": true,
+      "support_clause": true
+    },
+    "net_positive_required": false,
+    "promote": true,
+    "stage": "EXTENDED24"
+  },
+  "formal_eligible": false,
+  "high_level_action": "CHANGE_STATE_ACTION",
+  "incident_recovery": "MAIN_CONCURRENT_LEDGER_APPEND_HANDOFF_RECOVERY_ZERO_ECONOMIC_REEVALUATION",
+  "ledger_tip_hash": "a634ec45c641f0f25dbdc032d6b756c3259dff84aefcf557dc18596034401ac2",
+  "local_best_formulation_id": "e1494bc44aaab8040acdd130d237f3568ee2d5d86eeed4c178c4e6cec73ca5f8",
+  "oos_read": false,
+  "phase": "MAIN",
+  "q0_read": false,
+  "qualification_calls_after": 240,
+  "recovery_economic_calls": 0,
+  "replicate_id": "M01",
+  "resume_state_written": true,
+  "run_id": "PV1_M01_L",
+  "schema": "paper-v1-main-epoch-result-v1",
+  "screen_gate": {
+    "checks": {
+      "active_block_count_ge_1": true,
+      "constructible": true,
+      "gross_positive": true,
+      "support_clause": true
+    },
+    "promote": true,
+    "stage": "SCREEN8"
+  },
+  "search_calls_after": 768,
+  "successor_formulation_id": "0f72f2e62a2caf2fcf5d99a9a853e5d4d6ec4722b9240f9d71e2f2a3d96d18a6",
+  "terminal_stage": "FULLTRAIN_COURT",
+  "terminal_trajectory": false,
+  "total_economic_calls_after": 1008
+}

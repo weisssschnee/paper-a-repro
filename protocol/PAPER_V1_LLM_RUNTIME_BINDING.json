@@ -1,0 +1,68 @@
+{
+  "schema": "paper-v1-provider-neutral-llm-runtime-binding-v2",
+  "decision": "FROZEN_PROVIDER_NEUTRAL_LLM_RUNTIME_PRE_PILOT",
+  "scientific_authority": "protocol/PAPER_V1_LLM_CONTROLLER_INTERFACE.json",
+  "bridge": "scripts/paper_v1_llm_bridge.py",
+  "arms": ["L", "L0"],
+  "high_level": {
+    "prompt": "protocol/PAPER_V1_LLM_CONTROLLER_PROMPT.md",
+    "schema": "protocol/PAPER_V1_LLM_CONTROLLER_SCHEMA.json",
+    "validator": "scripts/validate_llm_controller_output.py",
+    "input": "one standardized evidence packet",
+    "output": "exactly one legal intervention action plus audit metadata",
+    "free_form_formula_generation": false,
+    "tool_use": false,
+    "repository_search": false,
+    "web_access": false,
+    "raw_market_data_access": false
+  },
+  "l0_local_batch": {
+    "prompt": "protocol/PAPER_V1_L0_LOCAL_BATCH_PROMPT.md",
+    "schema": "protocol/PAPER_V1_L0_LOCAL_BATCH_SCHEMA.json",
+    "validator": "scripts/validate_l0_local_batch.py",
+    "candidate_count": 7,
+    "parameter_only": true,
+    "semantic_change": false,
+    "economic_calls_with_anchor_on_screen8": 64
+  },
+  "transport_policy": {
+    "allowed": ["FILE_HANDOFF", "COMMAND_STDIO", "HTTP_API", "OTHER_INTERFACE_COMPATIBLE"],
+    "examples": ["ChatGPT web", "Codex controller-only wrapper", "OpenCode CLI wrapper", "OpenAI API", "other LLM API"],
+    "exact_provider_or_paid_api_required": false,
+    "local_model_deployment_required": false,
+    "provider_transport_is_scientific_object": false
+  },
+  "run_provenance": {
+    "freeze_before_first_llm_decision_of_each_matched_run": true,
+    "required_fields": [
+      "transport_class",
+      "backend_identity",
+      "model_identity_if_exposed",
+      "fresh_context=true",
+      "tools_disabled=true",
+      "controller_interface_sha256",
+      "prompt_schema_validator_hashes",
+      "backend_command_or_config_hash_if_applicable"
+    ],
+    "backend_switch_after_observing_run_outcomes": false,
+    "preferred_confirmatory_policy": "use one backend/model family across the primary confirmatory runs where practicable; if runtime changes are unavoidable, declare them as strata rather than silently pooling"
+  },
+  "failure_policy": {
+    "invalid_response": "one backend-local formatting repair may be attempted without new evidence; if canonical validation still fails, use predeclared deterministic fallback or restart the matched run",
+    "backend_unavailable": "do not substitute a different backend based on observed economic outcomes",
+    "manual_file_handoff": "allowed; request/response/receipt hashes are mandatory"
+  },
+  "mechanical_validation": {
+    "test": "tests/test_provider_neutral_llm_bridge_v1.py",
+    "expected": "10/10 PASS",
+    "file_high_level": true,
+    "file_l0": true,
+    "command_stdio": true
+  },
+  "historical_provider_specific_trials": "development-only transport debugging; not prospective authority and not required for launch",
+  "firewall": {
+    "paper_v1_outcomes_used_to_select_transport": false,
+    "q0_read": false,
+    "oos_read": false
+  }
+}

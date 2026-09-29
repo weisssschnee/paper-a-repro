@@ -1,0 +1,45 @@
+{
+  "arm": "L",
+  "decision": "PASS_PROSPECTIVE_EPOCH_COMPLETE",
+  "decision_epoch": 9,
+  "evidence_packet_sha256": "91a9061bdbbe82466753d8c76b925e45ed29791f8e503017772436f9b37e6842",
+  "execution_git_head": "8635324e37d9afef54e6ee8ebe454cb99f564bd9",
+  "extended_gate": {
+    "checks": {
+      "active_block_count_ge_3": true,
+      "gross_positive": false,
+      "positive_block_count_ge_2": true,
+      "support_clause": true
+    },
+    "net_positive_required": false,
+    "promote": false,
+    "stage": "EXTENDED24"
+  },
+  "formal_eligible": null,
+  "high_level_action": "CHANGE_CONTEXT",
+  "ledger_tip_hash": "16cf487f7a83a4b634a7c489f0d3897908981762b87483a5ee03bb77c997b5c3",
+  "local_best_formulation_id": "de1ec46941d5cdc41abc645365f72ea6152b949944a2899e4c7c5112cff37edc",
+  "oos_read": false,
+  "phase": "MAIN",
+  "q0_read": false,
+  "qualification_calls_after": 176,
+  "replicate_id": "M03",
+  "resume_state_written": true,
+  "run_id": "PV1_M03_L",
+  "schema": "paper-v1-main-epoch-result-v1",
+  "screen_gate": {
+    "checks": {
+      "active_block_count_ge_1": true,
+      "constructible": true,
+      "gross_positive": true,
+      "support_clause": true
+    },
+    "promote": true,
+    "stage": "SCREEN8"
+  },
+  "search_calls_after": 576,
+  "successor_formulation_id": "2a2239fa3e21370baa6aa1e1b8d48b63deeeaf6a9f228b01256aa311ca438666",
+  "terminal_stage": "EXTENDED24",
+  "terminal_trajectory": false,
+  "total_economic_calls_after": 752
+}

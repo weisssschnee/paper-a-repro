@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paper V1 L0 Local Candidate Batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "replicate_id", "decision_epoch", "base_formulation_id", "candidates", "rationale"],
+  "properties": {
+    "schema": {"const": "paper-v1-l0-local-candidate-batch-v1"},
+    "replicate_id": {"type": "string", "minLength": 1},
+    "decision_epoch": {"type": "integer", "minimum": 1},
+    "base_formulation_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "candidates": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidate_index", "parameters"],
+        "properties": {
+          "candidate_index": {"type": "integer", "minimum": 1, "maximum": 7},
+          "parameters": {"type": "object", "minProperties": 1}
+        }
+      }
+    },
+    "rationale": {"type": "string", "minLength": 1, "maxLength": 600}
+  }
+}

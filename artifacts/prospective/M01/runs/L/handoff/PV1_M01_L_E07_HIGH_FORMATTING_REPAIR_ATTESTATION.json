@@ -1,0 +1,27 @@
+{
+    "schema":  "paper-v1-controller-formatting-repair-attestation-v1",
+    "run_id":  "PV1_M01_L",
+    "decision_epoch":  7,
+    "mode":  "HIGH",
+    "backend_identity":  "CODEX_CONTROLLER_ONLY_FILE_HANDOFF",
+    "transport_variant":  "CHATGPT_HTTP_RESPONSES_NO_WEBSOCKET",
+    "repair_count":  1,
+    "repair_class":  "EVIDENCE_PATH_ONLY",
+    "invalid_evidence_paths":  [
+                                   "evidence.mechanical_diagnostics.cost_exceeds_gross",
+                                   "evidence.mechanical_diagnostics.gross_to_net_loss"
+                               ],
+    "repaired_evidence_paths":  [
+                                    "mechanical_diagnostics.cost_exceeds_gross",
+                                    "mechanical_diagnostics.gross_to_net_loss"
+                                ],
+    "action_unchanged":  true,
+    "rationale_unchanged":  true,
+    "confidence_unchanged":  true,
+    "new_evidence_supplied":  false,
+    "initial_response_file_sha256":  "aa573080ba382dc54592a958febd97b6d41f1107bacd454ca421aadb02d86ed7",
+    "final_response_file_sha256":  "53153c52b8a45c7cdea07256b5cfba22844fe6a88d41cf586b6da689bfa6a6a2",
+    "canonical_validation":  "PASS_PROVIDER_NEUTRAL_LLM_BRIDGE",
+    "q0_read":  false,
+    "oos_read":  false
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "paper-v1-provider-neutral-llm-controller-interface-v1",
+  "decision": "FROZEN_CONTROLLER_INTERFACE_WITH_L0_REQUEST_COMPLETENESS_BUGFIX",
+  "scientific_object": "Evidence Packet -> one legal high-level intervention action; transport/provider is implementation detail",
+  "canonical_input": {
+    "evidence_packet_schema": "protocol/PAPER_V1_EVIDENCE_PACKET_SCHEMA.json",
+    "controller_prompt": "protocol/PAPER_V1_LLM_CONTROLLER_PROMPT.md",
+    "allowed_actions": [
+      "CONTINUE_LOCAL_SEARCH",
+      "CHANGE_PARAMETERS",
+      "CHANGE_REPRESENTATION",
+      "CHANGE_CONTEXT",
+      "CHANGE_STATE_ACTION",
+      "CHANGE_MECHANISM",
+      "ABANDON_BASIN"
+    ]
+  },
+  "canonical_output": {
+    "schema": "protocol/PAPER_V1_LLM_CONTROLLER_SCHEMA.json",
+    "validator": "scripts/validate_llm_controller_output.py",
+    "only_executable_field": "action",
+    "rationale_confidence_evidence_fields_are_audit_metadata": true
+  },
+  "l0_local_batch": {
+    "purpose": "LLM-authored within-formulation local proposals for the L0 ablation",
+    "canonical_prompt": "protocol/PAPER_V1_L0_LOCAL_BATCH_PROMPT.md",
+    "canonical_schema": "protocol/PAPER_V1_L0_LOCAL_BATCH_SCHEMA.json",
+    "canonical_validator": "scripts/validate_l0_local_batch.py",
+    "candidate_count": 7,
+    "parameter_only": true,
+    "semantic_change_forbidden": true,
+    "request_must_include_parameter_order": true,
+    "request_must_include_frozen_parameter_domains": true,
+    "economic_call_budget_with_anchor": 64
+  },
+  "supported_transport_classes": {
+    "FILE_HANDOFF": "runner writes immutable request JSON; a fresh isolated ChatGPT/web UI/manual operator supplies response JSON; bridge validates and records hashes",
+    "COMMAND_STDIO": "runner invokes a declared CLI wrapper (for example OpenCode/Codex/other LLM CLI) with request JSON on stdin and reads response JSON on stdout",
+    "HTTP_API": "optional API adapter such as OpenAI/OpenRouter/other provider",
+    "OTHER": "allowed only if it preserves the same canonical I/O and provenance contract"
+  },
+  "fairness_and_isolation": {
+    "same_packet_for_all_llm_backends": true,
+    "fresh_context_per_controller_decision": true,
+    "raw_market_data_access": false,
+    "repository_search_access": false,
+    "shell_access": false,
+    "web_access": false,
+    "oos_access": false,
+    "q0_access": false,
+    "external_memory_or_prior_candidate_history": false,
+    "formula_generation": false,
+    "direct_evaluator_or_court_mutation": false,
+    "action_must_flow_through_deterministic_payload_runtime": true
+  },
+  "run_freeze_policy": {
+    "exact_provider_or_product_is_not_a_paper_launch_blocker": true,
+    "before_first_llm_decision_of_a_matched_run": [
+      "record transport_class",
+      "record backend/product/model identity as exposed by that runtime",
+      "record prompt/schema/validator hashes",
+      "record fresh-context and tools-disabled attestation",
+      "record backend command/config hash when applicable"
+    ],
+    "within_one_matched_run_backend_switch_after_outcomes": false,
+    "backend_failure_policy": "use the predeclared deterministic fallback or restart the entire affected matched run; never switch backend because one action/result looks poor",
+    "cross_run_backend_changes": "allowed only when predeclared and reported as runtime strata; primary confirmatory analysis should use one backend family where practicable"
+  },
+  "prospective_bugfix_record": {
+    "id": "L0_REQUEST_PARAMETER_DOMAIN_COMPLETENESS",
+    "prospective_run_started_before_fix": true,
+    "arms_with_epoch1_search_completed_before_fix": ["F", "P", "R", "L"],
+    "l0_economic_calls_before_fix": 0,
+    "observed_arm_outcomes_used_to_choose_fix": false,
+    "semantic_protocol_change": false,
+    "fix": "add frozen parameter_order and parameter_domains to the L0 provider-neutral request, as already required by the frozen L0 prompt/runtime binding",
+    "unchanged": ["candidate_count", "parameter domains", "action ontology", "economic-call budget", "screen evaluator", "canonical validator", "court", "Q0/OOS firewall"]
+  },
+  "reproducibility_position": "Reproducibility is defined by frozen controller I/O, action ontology, validators, payload runtime and per-call provenance. A proprietary API endpoint is not itself the scientific object.",
+  "firewall": {
+    "paper_v1_outcomes_used_to_define_interface": false,
+    "q0_read": false,
+    "oos_read": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "schema":  "paper-v1-main-inference-freeze-receipt-v1",
+    "decision":  "PASS_INFERENCE_PROCEDURE_FROZEN_BEFORE_COMPLETE_M01_M10_RESULTS",
+    "frozen_at":  "2026-09-18T01:47:43+08:00",
+    "formal_closures_present":  [
+                                    "M01",
+                                    "M02",
+                                    "M03",
+                                    "M04",
+                                    "M05",
+                                    "M06",
+                                    "M07"
+                                ],
+    "formal_closures_missing":  [
+                                    "M08",
+                                    "M09",
+                                    "M10"
+                                ],
+    "complete_final_matrix_available":  false,
+    "binding":  {
+                    "path":  "protocol/PAPER_V1_MAIN_INFERENCE_BINDING.json",
+                    "sha256":  "0d5c8b5146030e34371057b28cd8e6b1e3c7150be8b82e2d8326768375c39217"
+                },
+    "implementation":  {
+                           "path":  "scripts/analyze_paper_v1_main_inference.py",
+                           "sha256":  "968127450d5988f58c964250252b21d9a4c0ea0dd3efb1cc8f8fe7c28e2d470b"
+                       },
+    "selftest":  {
+                     "paired_t_summary":  "PASS",
+                     "exact_sign_flip":  "PASS",
+                     "holm":  "PASS",
+                     "final_matrix_guard":  "PASS_MISSING_M08_M09_M10",
+                     "script_hash_matches_binding":  true
+                 },
+    "q0_read":  false,
+    "oos_read":  false
+}

@@ -1,0 +1,12 @@
+{
+  "arms": [
+    "F",
+    "P",
+    "R",
+    "L",
+    "L0"
+  ],
+  "oos_read": false,
+  "q0_read": false,
+  "type": "design_schematic"
+}

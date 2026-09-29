@@ -1,0 +1,17 @@
+{
+  "schema": "paper-v1-controller-backend-attestation-v1",
+  "run_id": "PV1_M01_L0",
+  "decision_epoch": 14,
+  "mode": "HIGH",
+  "backend_identity": "CODEX_CONTROLLER_ONLY_FILE_HANDOFF",
+  "transport_provider": "chatgpt-http",
+  "supports_websockets": false,
+  "fresh_context": true,
+  "tool_calls_observed": 0,
+  "request_sha256": "3d17f712a033c05a9c3d92896e3dbabe710c34b0031490d2b95fa8e23fdd27a7",
+  "response_file_sha256": "e55bc5e9a64cd5f0b055f146201f41e931d47498723da03f34cd2ac4354e38f9",
+  "controller_event_log_sha256": "9627d8a4958e5d61397b07bf39a720f9c25fbfd9a69fdb7a3d5d3ecdd1e2218d",
+  "canonical_validation": "PASS_PROVIDER_NEUTRAL_LLM_BRIDGE",
+  "q0_read": false,
+  "oos_read": false
+}

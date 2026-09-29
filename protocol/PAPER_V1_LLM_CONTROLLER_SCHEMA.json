@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "paper-v1-llm-controller-output-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["action", "rationale", "evidence_fields_used", "confidence"],
+  "properties": {
+    "action": {
+      "enum": [
+        "CONTINUE_LOCAL_SEARCH",
+        "CHANGE_PARAMETERS",
+        "CHANGE_REPRESENTATION",
+        "CHANGE_CONTEXT",
+        "CHANGE_STATE_ACTION",
+        "CHANGE_MECHANISM",
+        "ABANDON_BASIN"
+      ]
+    },
+    "rationale": {"type": "string", "minLength": 1, "maxLength": 600},
+    "evidence_fields_used": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+$"}
+    },
+    "confidence": {"type": "number", "minimum": 0.0, "maximum": 1.0}
+  }
+}

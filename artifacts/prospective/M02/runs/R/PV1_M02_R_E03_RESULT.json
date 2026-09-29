@@ -1,0 +1,50 @@
+{
+  "arm": "R",
+  "decision": "PASS_PROSPECTIVE_MAIN_EPOCH_COMPLETE_AFTER_INFRASTRUCTURE_RECOVERY",
+  "decision_epoch": 3,
+  "evidence_packet_sha256": "d436ea872ba6794f1391cfdf48ed0a2b3c75c09d66cec56d07e7e02249d37739",
+  "execution_git_head": "8635324e37d9afef54e6ee8ebe454cb99f564bd9",
+  "extended_gate": {
+    "checks": {
+      "active_block_count_ge_3": true,
+      "gross_positive": true,
+      "positive_block_count_ge_2": true,
+      "support_clause": true
+    },
+    "net_positive_required": false,
+    "promote": true,
+    "stage": "EXTENDED24"
+  },
+  "formal_eligible": false,
+  "high_level_action": "CHANGE_PARAMETERS",
+  "incident_recovery": "MISSING_FROZEN_SPECIALIST_COURT_DEPLOYMENT",
+  "ledger_tip_hash": "ed31d7fab4e31329d5c8effb023693527b1a63aa86de53940f10ac4d29abce9a",
+  "local_best_formulation_id": "1fb786fc7e340c316a5e3526fd211e0fa5b10f53c6752900ebdbe2e5f416766e",
+  "new_fulltrain_calls_completed_in_recovery": 24,
+  "oos_read": false,
+  "original_extended_calls_completed_before_failure": 16,
+  "phase": "MAIN",
+  "q0_read": false,
+  "qualification_calls_after": 80,
+  "recovery_replay_calls": 80,
+  "recovery_replay_calls_charged_to_experimental_budget": false,
+  "replicate_id": "M02",
+  "resume_state_written": true,
+  "run_id": "PV1_M02_R",
+  "schema": "paper-v1-main-epoch-result-v1",
+  "screen_gate": {
+    "checks": {
+      "active_block_count_ge_1": true,
+      "constructible": true,
+      "gross_positive": true,
+      "support_clause": true
+    },
+    "promote": true,
+    "stage": "SCREEN8"
+  },
+  "search_calls_after": 192,
+  "successor_formulation_id": "988d77ae7de69fe15984aa37388ba091faf25ea0ea3940f1e62a843ffa7897ce",
+  "terminal_stage": "FULLTRAIN_COURT",
+  "terminal_trajectory": false,
+  "total_economic_calls_after": 272
+}

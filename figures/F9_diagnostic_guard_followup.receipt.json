@@ -1,0 +1,9 @@
+{
+  "extract": "F9_diagnostic_guard_followup.extract.json",
+  "extract_sha256": "cf819518f1485b1963e44f52e4e4c4ac71d3e2357419e847ccf8e8763fd3ae49",
+  "figure": "F9_diagnostic_guard_followup.svg",
+  "figure_sha256": "b611255102f636b8b637609916874f3f502873c9336f7daa5047fec4f500c5d3",
+  "oos_read": false,
+  "q0_read": false,
+  "schema": "paper-a-figure-receipt-v1"
+}

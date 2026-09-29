@@ -1,0 +1,37 @@
+{
+  "arm": "L",
+  "decision": "PASS_PROSPECTIVE_MAIN_EPOCH_COMPLETE_AFTER_HANDOFF_RECOVERY",
+  "decision_epoch": 3,
+  "evidence_packet_sha256": "cc270f00d37e0a75caaf412ca505a39e85022383d8ca19c43258c6e1031cae0f",
+  "execution_git_head": "cf7dc7b46c1736be97cdaf56011a3becfafc60ec",
+  "extended_gate": null,
+  "formal_eligible": null,
+  "high_level_action": "CHANGE_REPRESENTATION",
+  "incident_recovery": "MAIN_CONCURRENT_LEDGER_APPEND_HANDOFF_RECOVERY_ZERO_ECONOMIC_REEVALUATION",
+  "ledger_tip_hash": "62f2e6ccc174e17f2b15c6b9a26cedb48706f9c07201a310f99f617e896b9357",
+  "local_best_formulation_id": "3c06b96f77156627cbdda1711a9c11b2c5e186099aa4339a8a6cb2cc00d2770c",
+  "oos_read": false,
+  "phase": "MAIN",
+  "q0_read": false,
+  "qualification_calls_after": 0,
+  "recovery_economic_calls": 0,
+  "replicate_id": "M01",
+  "resume_state_written": true,
+  "run_id": "PV1_M01_L",
+  "schema": "paper-v1-main-epoch-result-v1",
+  "screen_gate": {
+    "checks": {
+      "active_block_count_ge_1": false,
+      "constructible": true,
+      "gross_positive": false,
+      "support_clause": false
+    },
+    "promote": false,
+    "stage": "SCREEN8"
+  },
+  "search_calls_after": 192,
+  "successor_formulation_id": "5ffde7dca6b570d1008875b530a01b2c2ab2a35fea5aea8d1a540ad355b7455d",
+  "terminal_stage": "SCREEN8",
+  "terminal_trajectory": false,
+  "total_economic_calls_after": 192
+}

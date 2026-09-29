@@ -1,0 +1,9 @@
+{
+  "extract": "F5_replicate_primary_outcomes.extract.json",
+  "extract_sha256": "3d39c3702825868c0315bd980bf5dcad9d1fa6f71c1693d5fbf3edb755da1474",
+  "figure": "F5_replicate_primary_outcomes.svg",
+  "figure_sha256": "c6ab530f60393aeb9c831594edeb956faad41cf80f5ac91b337e99d3e58f7faf",
+  "oos_read": false,
+  "q0_read": false,
+  "schema": "paper-a-figure-receipt-v1"
+}

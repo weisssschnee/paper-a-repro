@@ -1,0 +1,9 @@
+{
+  "extract": "F2_five_arm_design.extract.json",
+  "extract_sha256": "33c7120ddaca2ab8ff0ef0302731e62b36d017607d69f8218dd650f6c8bab517",
+  "figure": "F2_five_arm_design.svg",
+  "figure_sha256": "701987edd812c8328850d387f5c185dffc03a8d8b8573d2eba57f5fbc15f3eca",
+  "oos_read": false,
+  "q0_read": false,
+  "schema": "paper-a-figure-receipt-v1"
+}

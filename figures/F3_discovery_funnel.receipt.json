@@ -1,0 +1,9 @@
+{
+  "extract": "F3_discovery_funnel.extract.json",
+  "extract_sha256": "5c454f880f848592ec2401ebb390f3718e2159372d21de7e758aeede4d3476d6",
+  "figure": "F3_discovery_funnel.svg",
+  "figure_sha256": "63adc555a378d9aae0a85012a3c11f69461c0717d59b15d0e4673bb31ea60dce",
+  "oos_read": false,
+  "q0_read": false,
+  "schema": "paper-a-figure-receipt-v1"
+}

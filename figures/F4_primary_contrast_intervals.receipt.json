@@ -1,0 +1,9 @@
+{
+  "extract": "F4_primary_contrast_intervals.extract.json",
+  "extract_sha256": "08b6a4b55bc63e44ac9aa64584487d1dd585066f0bb96fdb72538e09e0942092",
+  "figure": "F4_primary_contrast_intervals.svg",
+  "figure_sha256": "e865a445a46bccbe066f4694c6cedd834feb01043fef45ab0c5ff848412e2867",
+  "oos_read": false,
+  "q0_read": false,
+  "schema": "paper-a-figure-receipt-v1"
+}

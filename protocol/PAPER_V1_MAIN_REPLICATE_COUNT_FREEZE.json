@@ -1,0 +1,128 @@
+{
+  "decision": "FREEZE_MAIN_N_10_BEFORE_FIRST_MAIN_ECONOMIC_CALL",
+  "main_budget": {
+    "arm_count": 5,
+    "conservative_total_economic_call_ceiling": 83200,
+    "decision_epochs_per_arm_replicate": 16,
+    "fixed_search_calls_per_arm_replicate": 1024,
+    "fixed_search_calls_total": 51200,
+    "maximum_qualification_calls_per_arm_replicate": 640
+  },
+  "main_economic_calls_before_freeze": 0,
+  "main_replicate_count": 10,
+  "oos_read": false,
+  "outcome_conditioned_arm_preference_used": false,
+  "pilot_analysis_path": "artifacts/prospective/PILOT/PAPER_V1_THREE_REPLICATE_PILOT_ANALYSIS.json",
+  "pilot_analysis_sha256": "4142d9928f26e5503dc156503bcb957fe069f20fe61ee59075529573e01a9a0d",
+  "pre_main_runtime_precheck_path": "artifacts/prospective/PILOT/PAPER_V1_PRE_MAIN_RUNTIME_PRECHECK.json",
+  "pre_main_runtime_precheck_sha256": "79377693aadd3c03f91e573c008cb730798f4f7412dedc73522f098cc00159f7",
+  "q0_read": false,
+  "replicate_schedule_path": "protocol/PAPER_V1_REPLICATE_SEED_SCHEDULE.json",
+  "replicate_schedule_sha256": "f97709e2211ebb2832758344e2235cddb909b8a7e88aa2df8d5a2b2df673f14c",
+  "sample_size_rule": "maximum predeclared n because pilot primary end-to-end endpoint is all-zero/variance-degenerate; structural precision reported but not arm-ranked for selection",
+  "schema": "paper-v1-main-replicate-count-freeze-v1",
+  "selected_replicate_ids": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08",
+    "M09",
+    "M10"
+  ],
+  "selected_schedule_rows": [
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S08_LIQUIDITY_CONCENTRATION",
+      "family_sort_hash": "0380eb9c327b775b8e2f93f0b3665c7ed501d98bdecaf1e9c1af06907a73f8ef",
+      "initial_state_action_family": "FIXED_REFRESH_CARRY_TARGET_V0",
+      "parameter_rng_seed": 147353349,
+      "payload_rng_seed": 55366194,
+      "replicate_id": "M01"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S07_PRICE_DISCOVERY_LEADLAG",
+      "family_sort_hash": "180a54b3cdf5d867079960c23b63b434ffd7e8089a1a9d961ee76c1f35647dc9",
+      "initial_state_action_family": "FIXED_REFRESH_CARRY_TARGET_V0",
+      "parameter_rng_seed": 175723107,
+      "payload_rng_seed": 253368487,
+      "replicate_id": "M02"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S10_JUMP_SERIAL_DEPENDENCE",
+      "family_sort_hash": "79fc786eebf252e576a13b58bfb15a3bfb46abafb310aa63230b810325daa4e3",
+      "initial_state_action_family": "XS_STATEFUL_HOLD_PARTIAL_SWITCH_V1",
+      "parameter_rng_seed": 45001927,
+      "payload_rng_seed": 89190584,
+      "replicate_id": "M03"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S09_BREADTH_RELATIVE_DISLOCATION",
+      "family_sort_hash": "a917a6fd191e087aee878975d5c0f49f01174c96f287231a29858658e921b153",
+      "initial_state_action_family": "XS_STATEFUL_HOLD_PARTIAL_SWITCH_V1",
+      "parameter_rng_seed": 264895551,
+      "payload_rng_seed": 81772772,
+      "replicate_id": "M04"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S01_OI_PRICE_ACCEPTANCE",
+      "family_sort_hash": "b12a37ca67d5b13b42dc2c534ad012200250a54cb723bb803bd57a5e883d008d",
+      "initial_state_action_family": "FIXED_REFRESH_CARRY_TARGET_V0",
+      "parameter_rng_seed": 197909936,
+      "payload_rng_seed": 108882452,
+      "replicate_id": "M05"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S02_POSITIONING_CROWD_UNWIND",
+      "family_sort_hash": "c1dbcc0677f8f15ecd8197e43b890bb8c29a559ec156a88149befe08e382ef6e",
+      "initial_state_action_family": "FIXED_REFRESH_CARRY_TARGET_V0",
+      "parameter_rng_seed": 17290452,
+      "payload_rng_seed": 32991853,
+      "replicate_id": "M06"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S04_CROSS_PRICE_DISLOCATION",
+      "family_sort_hash": "c2bcb7517ff0df4c48f104d72d219cab4613584aa00927b9a3106813c80ab845",
+      "initial_state_action_family": "XS_STATEFUL_HOLD_PARTIAL_SWITCH_V1",
+      "parameter_rng_seed": 66390035,
+      "payload_rng_seed": 11784169,
+      "replicate_id": "M07"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S06_CARRY_TRANSITION",
+      "family_sort_hash": "c9fdc793aa3d6f5df662d8246ed8a5e307ed807125fa86e883dc0faf55c96532",
+      "initial_state_action_family": "XS_STATEFUL_HOLD_PARTIAL_SWITCH_V1",
+      "parameter_rng_seed": 17196280,
+      "payload_rng_seed": 31547843,
+      "replicate_id": "M08"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S03_FLOW_ACCEPTANCE_ABSORPTION",
+      "family_sort_hash": "d69666a7dbe3d22584a3d87445445c5cde3edd22b9aceeb4dae00ee5d82a945e",
+      "initial_state_action_family": "FIXED_REFRESH_CARRY_TARGET_V0",
+      "parameter_rng_seed": 123084360,
+      "payload_rng_seed": 120706219,
+      "replicate_id": "M09"
+    },
+    {
+      "all_five_arms_identical_start": true,
+      "family_id": "S05_VOLATILITY_COMPRESSION_SHOCK",
+      "family_sort_hash": "dd5a549b8ffd5fee5918858255d5920f95df50a3359ef1b81b80179e27552fa7",
+      "initial_state_action_family": "XS_STATEFUL_HOLD_PARTIAL_SWITCH_V1",
+      "parameter_rng_seed": 171154656,
+      "payload_rng_seed": 135111766,
+      "replicate_id": "M10"
+    }
+  ]
+}

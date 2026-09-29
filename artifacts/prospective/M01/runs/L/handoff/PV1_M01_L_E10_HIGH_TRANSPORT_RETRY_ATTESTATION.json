@@ -1,0 +1,33 @@
+{
+    "schema":  "paper-v1-controller-transport-retry-attestation-v1",
+    "decision":  "PASS_RETRY_AFTER_TRANSPORT_TIMEOUT_WITH_NO_PRIOR_RESPONSE",
+    "run_id":  "PV1_M01_L",
+    "decision_epoch":  10,
+    "mode":  "HIGH",
+    "request_file_sha256":  "1e739e17bcdede8045b75bde3228b7093df8d4a3c88a77a5284aed091996fff5",
+    "attempt_1":  {
+                      "transport_provider":  "chatgpt-http",
+                      "durable_timeout_seconds":  180,
+                      "terminal_state":  "TIMED_OUT",
+                      "response_file_created":  false,
+                      "controller_event_log_sha256":  "7d3cda7e8365203097ca9d7e2bc14b1a4482950cf3f6e8349d9c9bf007e79078",
+                      "controller_stderr_sha256":  "2d0f4722f33b102cf2be6cfdefe54ada704c06d4566ca33c1e1146517b491f22",
+                      "reconnect_events":  0,
+                      "tool_calls_observed":  0,
+                      "codex_child_present_before_retry":  false
+                  },
+    "attempt_2":  {
+                      "transport_provider":  "chatgpt-http",
+                      "durable_timeout_seconds":  600,
+                      "terminal_state":  "SUCCEEDED",
+                      "response_file_sha256":  "b851660afcb6c29d9044f2194c0c3dbae2a6956729982d45fdde15e1134b59b0",
+                      "controller_event_log_sha256":  "4bca2766c360c0ef1f50421d61de4f48c3126dbc83194197992ca212a1d12813",
+                      "controller_stderr_sha256":  "3b23302c88f61ec631acc3f540010bf3095736bd84145205f2043d8db9184c57",
+                      "reconnect_events":  0,
+                      "tool_calls_observed":  0,
+                      "canonical_validation":  "PASS_PROVIDER_NEUTRAL_LLM_BRIDGE"
+                  },
+    "economic_evaluator_calls_added_by_retry":  0,
+    "q0_read":  false,
+    "oos_read":  false
+}

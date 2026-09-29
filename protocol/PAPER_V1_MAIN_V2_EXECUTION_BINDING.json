@@ -1,0 +1,108 @@
+﻿{
+    "schema":  "paper-v1-main-v2-execution-binding-v1",
+    "decision":  "READY_FOR_M08_FRESH_V2_RERUN_WITH_NINE_REPLICATE_ECONOMIC_PATH_CARRY_FORWARD",
+    "frozen_before_first_v2_economic_call":  true,
+    "main_v2_economic_calls_before_binding":  0,
+    "authority_parent_git_head":  "8b1c05d7f453913232a6011c11ff285a174f4ca3",
+    "v1_incident":  {
+                        "path":  "artifacts\\prospective\\MAIN_INCIDENTS\\M08_V1_FROZEN_CONTRACT_CONTRADICTION_20260918\\ABORT_AND_REFORMULATION_DECISION.json",
+                        "sha256":  "ecd163e6f59188823dead6c1156bac7e1c7e2ab19e1ce5a50d63f27b5ea59b32",
+                        "decision":  "INVALIDATE_PAPER_V1_MAIN_CONFIRMATORY_FIXED_BUDGET_INFERENCE_NO_RESTART3"
+                    },
+    "carry_forward":  {
+                          "path":  "artifacts\\prospective\\MAIN_INCIDENTS\\M08_V1_FROZEN_CONTRACT_CONTRADICTION_20260918\\PAPER_V1_MAIN_V2_CARRY_FORWARD_AUDIT.json",
+                          "sha256":  "a093a0c25978e433d5dfaa192c3f94463f339d7cada3c862959678335c91bc60",
+                          "replicates":  [
+                                             "M01",
+                                             "M02",
+                                             "M03",
+                                             "M04",
+                                             "M05",
+                                             "M06",
+                                             "M07",
+                                             "M09",
+                                             "M10"
+                                         ],
+                          "fresh_v2_replicates":  [
+                                                      "M08"
+                                                  ],
+                          "post_final_non_economic_difference":  [
+                                                                     "M07/L/E16 successor transition only"
+                                                                 ],
+                          "rule":  "carried evidence may be used only because V2 is byte-identical on all pre-E16 reached payload branches and every carried arm completed 1024 fixed search calls"
+                      },
+    "v2_selftest":  {
+                        "path":  "artifacts\\prospective\\MAIN_INCIDENTS\\M08_V1_FROZEN_CONTRACT_CONTRADICTION_20260918\\PAPER_V1_MAIN_V2_MECHANISM_EXHAUSTION_SELFTEST.json",
+                        "sha256":  "165e54c9e7ef4e58c83cc4443f50c6659d58e145ec03fb39570c7e59cad37e3b",
+                        "decision":  "PASS_V2_TOTAL_STATE_MACHINE_NONEXHAUSTED_V1_PARITY",
+                        "non_exhausted_cases":  70,
+                        "stress_sequences":  30,
+                        "transitions_per_stress_sequence":  64,
+                        "duplicate_formulation_id_count":  0,
+                        "terminal_count":  0
+                    },
+    "runtime_delta":  {
+                          "protocol/PAPER_V1_MAIN_V2_MECHANISM_EXHAUSTION_POLICY.json":  "710558418d17ec7fa00336185a73d88a8f75c9a0b5fbf832eec7a1c0ac84ac12",
+                          "scripts/formulation_payload_generator_main_v2.py":  "96543eae22cc90e2d386c4dec984733a7642945dc6226e6a3d3a3975c2a3cb71",
+                          "scripts/apply_formulation_payload_main_v2.py":  "e079e546b5428562f2ee4604aeadf6b3913a8014821617d5783d90d5069cbff6",
+                          "evaluator/paper_v1_main_v2_arm_runtime.py":  "53b3597d57280bcf4843fbf202aab3cf6a2f75334ee070e2ed91c54feb81397b",
+                          "evaluator/paper_v1_main_v2_trajectory_runtime.py":  "530aa580812faf2075b68083283d8b7779c97d13036d8bbe3d8176d7622c067a",
+                          "scripts/run_paper_v1_main_v2_epoch1_77o.py":  "56f23d52619b9b662a827e1355865145edef36fe46865dfeee4a2c8ade337b97",
+                          "scripts/run_paper_v1_main_v2_resume_epoch_77o.py":  "464b4d5a05637c8f6aaaa13d6fcf8625e6a8d4718a133b890296e6addc64ea74",
+                          "scripts/run_paper_v1_main_v2_epoch_locked.ps1":  "c646f7163e2c9a63d114aa5855eb2ab502836c12b2858f915caa8ef43e3333af"
+                      },
+    "controller":  {
+                       "backend_identity":  "CODEX_CONTROLLER_ONLY_FILE_HANDOFF",
+                       "transport_provider":  "ccswitch-local-http",
+                       "observed_upstream_provider":  "<redacted_relay_vendor>",
+                       "model_identity":  "gpt-5.6-sol",
+                       "fresh_context":  true,
+                       "ephemeral":  true,
+                       "tools_disabled":  true,
+                       "web_disabled":  true,
+                       "repository_search_disabled":  true,
+                       "high_wrapper_path":  "scripts/run_paper_v1_controller_ccswitch_high_restart2_77o.ps1",
+                       "high_wrapper_sha256":  "a771c5032b7c5ce8b54eb552106d7dbe2fec953ac371f4646e000821a2b266ec",
+                       "l0_wrapper_path":  "scripts/run_paper_v1_controller_ccswitch_l0_restart2_hardened_77o.ps1",
+                       "l0_wrapper_sha256":  "c5847549d7109b81f3d976e5a71a71bd6857330ad6b7d8edc10754a0da517186"
+                   },
+    "reused_frozen_core":  {
+                               "evaluator/paper_v1_economic.py":  "4205d3274de5e79f5d45992bc5d36e51b4e9363a049277b7d1d0ba7ac3838b86",
+                               "evaluator/paper_v1_screen_runtime.py":  "33e174f46fb8ae3c366a657c61a530f3b0bb809a17674442358b48f57e29fd9a",
+                               "evaluator/paper_v1_qualification_runtime.py":  "ef2d1e2087ded61287a3c406ddf00f9c6559e1dd32a956c9faeb2f74c09cd6ca",
+                               "scripts/paper_v1_ladder.py":  "0fd0911d25f4e4995bcc2f05a420bc733b8b8d44366708ebf44e082a5158d99c",
+                               "protocol/PAPER_V1_EVALUATION_LADDER_BINDING.json":  "05ec904161ad708cd48ca81b4126c44170c1b5b48b0c6ba7bda9e5469b48f225",
+                               "protocol/PAPER_V1_FORMULATION_SEED_BANK.json":  "afbfea5bba64b178de79311c0745a620e8ad660b6ddb0488128a200f56bf4ea7",
+                               "protocol/PAPER_V1_FORMULATION_MUTATION_BANK.json":  "62b0ce51ec63d6e90310df78903647db9d4a833a7973908322f22a61c533e438",
+                               "protocol/PAPER_V1_REPLICATE_SEED_SCHEDULE.json":  "f97709e2211ebb2832758344e2235cddb909b8a7e88aa2df8d5a2b2df673f14c",
+                               "scripts/bootstrap_paper_v1_main_epoch1_resume_state_77o.py":  "43d6768cfba0f04c6427be5bcfa116df2d15ec708a594a690e002c1e2124468f",
+                               "scripts/materialize_paper_v1_main_target_view_77o.py":  "136b81ea728fa597572acdbd753c5efaf9c0b269787c3fe17f1ccd967271f55f",
+                               "scripts/close_paper_v1_main_replicate_v2_77o.py":  "cdb1f53cf3c6ef4c0dfc6edb1b1660d9e7813d13c074d3ca3b457a52c1a00883",
+                               "protocol/PAPER_V1_LLM_CONTROLLER_PROMPT.md":  "c1bc2fef26df3e151b7390a5c526c6c49ce742ec0ab028d5810debbd9f9db39b",
+                               "protocol/PAPER_V1_LLM_CONTROLLER_SCHEMA.json":  "21682a74e65e2bffa688460180594cfdac186aa56d40500eb74642e5e51d3c61",
+                               "protocol/PAPER_V1_L0_LOCAL_BATCH_PROMPT.md":  "53fab32b521eb8200369b1ca5ab99726df8a1e01a55936dd8871c72da1589e73",
+                               "protocol/PAPER_V1_L0_LOCAL_BATCH_SCHEMA.json":  "2b20936734be1c0a4374bd33bb3b48c69fc869b19f4e87d6d71eb6fa38a96c0a",
+                               "scripts/paper_v1_llm_bridge.py":  "c32d221980c256d770f5b095f81fe46c5b6a1132f946822899ab4b1718708986"
+                           },
+    "scope":  {
+                  "fresh_replicate":  "M08",
+                  "arms":  [
+                               "F",
+                               "P",
+                               "R",
+                               "L",
+                               "L0"
+                           ],
+                  "decision_epochs_per_arm":  16,
+                  "search_calls_per_epoch":  64,
+                  "fixed_search_calls_per_arm":  1024,
+                  "only_semantic_delta":  "when no unused mechanism family remains, deterministic cycle reset to first non-current family in frozen permutation instead of terminal",
+                  "no_new_mechanism_family":  true
+              },
+    "firewall":  {
+                     "q0_read":  false,
+                     "oos_read":  false,
+                     "submission":  false,
+                     "trading":  false
+                 }
+}

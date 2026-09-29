@@ -1,0 +1,26 @@
+{
+    "schema":  "paper-v1-controller-formatting-repair-attestation-v1",
+    "run_id":  "PV1_M01_L0",
+    "decision_epoch":  7,
+    "mode":  "HIGH",
+    "backend_identity":  "CODEX_CONTROLLER_ONLY_FILE_HANDOFF",
+    "repair_count":  1,
+    "repair_class":  "EVIDENCE_PATH_ONLY",
+    "invalid_evidence_paths":  [
+                                   "evidence.mechanical_diagnostics.gross_positive",
+                                   "evidence.mechanical_diagnostics.cost_exceeds_gross"
+                               ],
+    "repaired_evidence_paths":  [
+                                    "mechanical_diagnostics.gross_positive",
+                                    "mechanical_diagnostics.cost_exceeds_gross"
+                                ],
+    "action_unchanged":  true,
+    "rationale_unchanged":  true,
+    "confidence_unchanged":  true,
+    "new_evidence_supplied":  false,
+    "initial_response_file_sha256":  "539758246eabb26dd597c8befd03a91e581fbb2967f651943d0d17a52979051a",
+    "final_response_file_sha256":  "78639486f82fd69d85a4182cfd120651a260dfd42a51322e19dd0ca1e4bb7ef5",
+    "canonical_validation":  "PASS_PROVIDER_NEUTRAL_LLM_BRIDGE",
+    "q0_read":  false,
+    "oos_read":  false
+}

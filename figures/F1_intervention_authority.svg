@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="240" viewBox="0 0 1040 240">
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:28px;fill:currentColor}.small{font-size:24px}.title{font-size:36px;font-weight:700}.label{font-weight:700}.axis{stroke:currentColor;stroke-width:2}.ci{stroke:currentColor;stroke-width:4}.box{fill:none;stroke:currentColor;stroke-width:2.5}.thin{fill:none;stroke:currentColor;stroke-width:2}.dot{fill:currentColor}.mean{fill:none;stroke:currentColor;stroke-width:4}</style>
+<rect x="20" y="85" width="135" height="72" rx="10" class="box"/>
+<text x="87.5" y="131" text-anchor="middle">Formulation</text>
+<rect x="180" y="85" width="135" height="72" rx="10" class="box"/>
+<text x="247.5" y="131" text-anchor="middle">Local search</text>
+<rect x="340" y="85" width="135" height="72" rx="10" class="box"/>
+<text x="407.5" y="131" text-anchor="middle">Evidence</text>
+<rect x="500" y="85" width="135" height="72" rx="10" class="box"/>
+<text x="567.5" y="131" text-anchor="middle">Policy</text>
+<rect x="660" y="85" width="135" height="72" rx="10" class="box"/>
+<text x="727.5" y="131" text-anchor="middle">Successor</text>
+<rect x="845" y="85" width="135" height="72" rx="10" class="box"/>
+<text x="912.5" y="131" text-anchor="middle">Evaluator</text>
+<line x1="155" y1="121" x2="170" y2="121" class="axis"/>
+<polyline points="161,113 170,121 161,129" class="thin"/>
+<line x1="315" y1="121" x2="330" y2="121" class="axis"/>
+<polyline points="321,113 330,121 321,129" class="thin"/>
+<line x1="475" y1="121" x2="490" y2="121" class="axis"/>
+<polyline points="481,113 490,121 481,129" class="thin"/>
+<line x1="635" y1="121" x2="650" y2="121" class="axis"/>
+<polyline points="641,113 650,121 641,129" class="thin"/>
+<line x1="795" y1="121" x2="835" y2="121" class="axis"/>
+<polyline points="826,113 835,121 826,129" class="thin"/>
+<text x="520" y="205" text-anchor="middle" class="small">Shared scientific authority remains outside controller control</text>
+</svg>

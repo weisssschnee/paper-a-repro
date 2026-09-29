@@ -1,0 +1,69 @@
+{
+  "LG_guard": {
+    "base_controller": "same frozen L high-level LLM controller/backend contract",
+    "local_optimizer": "same conventional CEM as L",
+    "no_extra_llm_calls": true,
+    "rules_in_order": [
+      "If base LLM action == CHANGE_REPRESENTATION, execute CONTINUE_LOCAL_SEARCH.",
+      "Else if previous executed action is semantic and base LLM action is semantic, execute CONTINUE_LOCAL_SEARCH for one-epoch cooldown.",
+      "Else execute base LLM action unchanged."
+    ],
+    "semantic_actions": [
+      "CHANGE_REPRESENTATION",
+      "CHANGE_CONTEXT",
+      "CHANGE_STATE_ACTION",
+      "CHANGE_MECHANISM",
+      "ABANDON_BASIN"
+    ]
+  },
+  "decision": "FROZEN_BEFORE_FIRST_FOLLOWUP_ECONOMIC_CALL",
+  "design": {
+    "arms": [
+      "L",
+      "LG"
+    ],
+    "epochs_per_arm": 16,
+    "fixed_search_calls_per_arm_replicate": 1024,
+    "fresh_schedule": "protocol/PAPER_LG_FOLLOWUP_SEED_SCHEDULE.json",
+    "replicates": [
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M15",
+      "M16"
+    ],
+    "same_start_within_replicate": true,
+    "search_calls_per_epoch": 64,
+    "total_fixed_search_calls": 12288
+  },
+  "development_data": "M01-M10 final main results were used to design the guard; follow-up evidence must come only from fresh M11-M16 calls.",
+  "firewall": {
+    "oos_read": false,
+    "q0_read": false,
+    "submission": false,
+    "trading": false
+  },
+  "interpretation_boundary": "A positive result supports only improved intervention calibration / reduced shallow-failure burden. It does not overturn the main null result or establish better discovery efficiency.",
+  "multiplicity": "No secondary confirmatory claims; primary is the sole inferential endpoint.",
+  "primary": {
+    "contrast": "LG-L",
+    "direction": "lower_is_better",
+    "effect_interval": "paired-t 95% CI, descriptive/supporting",
+    "endpoint": "SCREEN8 terminal visits per 16-epoch replicate",
+    "positive_claim_gate": "mean(LG-L)<0 AND exact p<0.05",
+    "test": "exact two-sided paired sign-flip over six replicate differences"
+  },
+  "schema": "paper-lg-followup-protocol-v1",
+  "scientific_question": "Does a deterministic representation block plus one-epoch semantic-intervention cooldown reduce shallow SCREEN8 failure burden relative to the original L controller under otherwise matched search?",
+  "secondary_descriptive": [
+    "fulltrain visits",
+    "formal admissions",
+    "scoped novelty events",
+    "qualification calls",
+    "charged economic calls",
+    "semantic intervention count",
+    "intervention-followed-by-SCREEN8 count",
+    "guard application count / representation blocks / cooldowns"
+  ]
+}

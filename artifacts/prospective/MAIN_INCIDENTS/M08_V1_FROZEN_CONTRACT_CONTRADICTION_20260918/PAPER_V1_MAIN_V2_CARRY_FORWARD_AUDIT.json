@@ -1,0 +1,359 @@
+﻿{
+    "schema":  "paper-v1-main-v2-carry-forward-audit-v1",
+    "decision":  "PASS_NINE_REPLICATE_ECONOMIC_PATH_EQUIVALENCE_M08_FRESH_V2_REQUIRED",
+    "carry_forward_replicates":  [
+                                     "M01",
+                                     "M02",
+                                     "M03",
+                                     "M04",
+                                     "M05",
+                                     "M06",
+                                     "M07",
+                                     "M09",
+                                     "M10"
+                                 ],
+    "fresh_v2_replicates":  [
+                                "M08"
+                            ],
+    "checks":  {
+                   "arm_count":  45,
+                   "all_arms_have_16_results":  true,
+                   "all_arms_final_search_calls_1024":  true,
+                   "early_terminal_before_e16_count":  0,
+                   "v2_non_exhausted_payload_byte_parity":  true,
+                   "v2_selftest_sha256":  "165e54c9e7ef4e58c83cc4443f50c6659d58e145ec03fb39570c7e59cad37e3b",
+                   "v2_selftest_non_exhausted_case_count":  70,
+                   "v2_selftest_stress_sequence_count":  30
+               },
+    "post_final_transition_differences":  [
+                                              {
+                                                  "replicate_id":  "M07",
+                                                  "arm":  "L",
+                                                  "decision_epoch":  16,
+                                                  "search_calls_after":  1024,
+                                                  "action":  "ABANDON_BASIN"
+                                              }
+                                          ],
+    "economic_path_equivalence_rule":  "V2 is byte-identical to V1 until unused-family exhaustion. No carried replicate exhausted before completing E16/1024 search calls. Any E16 terminal successor difference occurs after the last scheduled economic call and is excluded from confirmatory economic endpoints.",
+    "carry_forward_rows":  [
+                               {
+                                   "replicate_id":  "M01",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M01",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M01",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M01",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M01",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M02",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M02",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M02",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M02",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M02",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M03",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M03",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M03",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M03",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M03",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M04",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M04",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M04",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M04",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M04",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M05",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M05",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M05",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M05",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M05",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M06",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M06",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M06",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M06",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M06",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M07",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M07",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M07",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M07",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M07",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M09",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M09",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M09",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M09",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M09",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M10",
+                                   "arm":  "F",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M10",
+                                   "arm":  "P",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M10",
+                                   "arm":  "R",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M10",
+                                   "arm":  "L",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               },
+                               {
+                                   "replicate_id":  "M10",
+                                   "arm":  "L0",
+                                   "result_count":  16,
+                                   "final_search_calls":  1024,
+                                   "early_terminal":  false
+                               }
+                           ],
+    "economic_outcomes_used_to_choose_carry_forward":  false,
+    "carry_forward_basis":  "mechanical runtime branch reachability and fixed-budget completion only",
+    "q0_read":  false,
+    "oos_read":  false
+}

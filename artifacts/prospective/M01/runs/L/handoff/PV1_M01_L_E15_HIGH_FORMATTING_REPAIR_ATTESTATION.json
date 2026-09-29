@@ -1,0 +1,21 @@
+{
+  "schema": "paper-v1-controller-formatting-repair-attestation-v1",
+  "decision": "PASS_ONE_BACKEND_LOCAL_FORMATTING_REPAIR_NO_NEW_EVIDENCE",
+  "run_id": "PV1_M01_L",
+  "decision_epoch": 15,
+  "mode": "HIGH",
+  "original_response_sha256": "3982477ce995915b5e1d03fcacf7225ef798dc5ecf65c4c1036a30b04823a268",
+  "repair_request_sha256": "52c5cec903dda7d67dc9bf57a2fac941c12fca1561a813413e060210c696b499",
+  "repaired_response_sha256": "0c8fe8abd1a4683cc823fbdbd2593498f48b59df95a17c65ea442816389a8b04",
+  "repair_event_log_sha256": "8874696ad74dfa6f0fb97e2059656c87ca27b9515dd311b94d361d87f4285859",
+  "allowed_change": "remove evidence. prefix from exactly one mechanical_diagnostics.cost_exceeds_gross path",
+  "action_unchanged": true,
+  "rationale_unchanged": true,
+  "confidence_unchanged": true,
+  "evidence_change_exactly_allowed": true,
+  "canonical_validation": "PASS_PROVIDER_NEUTRAL_LLM_BRIDGE",
+  "tool_calls_observed": 0,
+  "new_evidence_added": false,
+  "q0_read": false,
+  "oos_read": false
+}

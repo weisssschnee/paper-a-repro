@@ -1,0 +1,57 @@
+{
+  "schema": "paper-v1-main-inference-binding-v1",
+  "decision": "FROZEN_BEFORE_COMPLETE_M01_M10_MATCHED_RESULTS",
+  "freeze_date": "2026-09-18",
+  "scope": {
+    "confirmatory_unit": "MATCHED_REPLICATE",
+    "replicate_count": 10,
+    "replicates": ["M01", "M02", "M03", "M04", "M05", "M06", "M07", "M08", "M09", "M10"],
+    "planned_contrasts_in_family_order": ["R-F", "P-F", "R-P", "L-R", "L-L0", "L-F", "L-P"],
+    "confirmatory_contrasts": ["R-F", "R-P", "L-R", "L-L0"],
+    "supporting_planned_contrasts": ["P-F", "L-F", "L-P"],
+    "inferential_endpoint_families": [
+      "primary_scoped_new_rate_per_1000_calls",
+      "formal_admission_rate_per_1000_calls"
+    ],
+    "cost_metrics": "DESCRIPTIVE_UNLESS_SEPARATELY_PREDECLARED",
+    "future_funnel_metrics": "SAME_PAIRED_MEAN_DIFFERENCE_AND_WITHIN_ENDPOINT_FAMILY_MULTIPLICITY_RULE_IF_A_PREDECLARED_REPLICATE_LEVEL_METRIC_IS MATERIALIZED"
+  },
+  "method": {
+    "alpha": 0.05,
+    "sidedness": "TWO_SIDED",
+    "effect_estimator": "ARITHMETIC_MEAN_OF_MATCHED_REPLICATE_DIFFERENCES",
+    "confidence_interval": "TWO_SIDED_PAIRED_T_INTERVAL_DF_N_MINUS_1",
+    "primary_p_value": "TWO_SIDED_PAIRED_T_TEST",
+    "robustness_p_value": "EXACT_TWO_SIDED_SIGN_FLIP_ON_ABSOLUTE_MEAN_ALL_2_POW_N_PATTERNS",
+    "robustness_role": "DIAGNOSTIC_ONLY_NOT_USED_FOR_HOLM_OR_CONFIRMATORY_DECISION",
+    "multiplicity": "HOLM_STEP_DOWN_ACROSS_ALL_SEVEN_PLANNED_CONTRASTS_WITHIN_EACH_ENDPOINT_FAMILY",
+    "holm_input": "PRIMARY_P_VALUES_ONLY",
+    "missing_replicates": "FAIL_CLOSED_NO_INFERENCE",
+    "nonfinite_values": "FAIL_CLOSED_NO_INFERENCE",
+    "zero_variance_rule": "IF_ALL_DIFFERENCES_EQUAL_ZERO_SET_P_ONE_AND_CI_ZERO; IF_ALL_DIFFERENCES_IDENTICAL_NONZERO_SET_P_ZERO_AND_DEGENERATE_CI_AT_EFFECT",
+    "endpoint_substitution": "FORBIDDEN",
+    "directional_winner_rule": "FORBIDDEN",
+    "q0_oos": "MUST_REMAIN_FALSE"
+  },
+  "interpretation": {
+    "estimand_alignment": "The primary effect estimate and t interval/test target the protocol's mean matched-replicate contrast E[Y^a-Y^b].",
+    "small_n_limitation": "n=10 is retained as frozen; t-based inference may be sensitive to sparse or non-normal replicate differences and must be interpreted with the exact sign-flip robustness diagnostic and visible replicate-level differences.",
+    "sign_flip_assumption": "The exact sign-flip diagnostic is not design-randomization inference because policy labels were not randomized; it is reported only as a symmetry/exchangeability robustness diagnostic.",
+    "holm_scope": "All seven planned pairwise contrasts share the Holm family within each endpoint to avoid result-dependent exclusion of supporting planned tests.",
+    "null_result_rule": "A null or zero-event primary endpoint remains a valid final result and may not be replaced by a more favorable endpoint."
+  },
+  "implementation": {
+    "path": "scripts/analyze_paper_v1_main_inference.py",
+    "sha256": "968127450d5988f58c964250252b21d9a4c0ea0dd3efb1cc8f8fe7c28e2d470b",
+    "requires_final_matrix_decision": "PASS_ALL_TEN_MATCHED_REPLICATE_CLOSURES_ASSEMBLED",
+    "requires_replicate_order": ["M01", "M02", "M03", "M04", "M05", "M06", "M07", "M08", "M09", "M10"],
+    "requires_q0_read": false,
+    "requires_oos_read": false
+  },
+  "pre_final_state_attestation": {
+    "formal_closures_present_at_freeze": ["M01", "M02", "M03", "M04", "M05", "M06", "M07"],
+    "formal_closures_missing_at_freeze": ["M08", "M09", "M10"],
+    "complete_final_matrix_available_at_freeze": false,
+    "binding_not_selected_from_complete_ten_replicate_contrasts": true
+  }
+}

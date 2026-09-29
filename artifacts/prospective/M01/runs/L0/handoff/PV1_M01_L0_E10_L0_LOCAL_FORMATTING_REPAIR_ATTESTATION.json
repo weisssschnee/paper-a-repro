@@ -1,0 +1,18 @@
+{
+    "schema":  "paper-v1-controller-formatting-repair-attestation-v1",
+    "run_id":  "PV1_M01_L0",
+    "decision_epoch":  10,
+    "mode":  "L0",
+    "backend_identity":  "CODEX_CONTROLLER_ONLY_FILE_HANDOFF",
+    "repair_count":  1,
+    "repair_class":  "WRONG_OUTPUT_CONTRACT_TO_FROZEN_L0_SCHEMA",
+    "new_evidence_supplied":  false,
+    "original_request_reused_exactly":  true,
+    "invalid_response_used_as_scientific_guidance":  false,
+    "invalid_response_file_sha256":  "a5261f9c3c928be5442490b330c43420ab9e2c9414f7069a4d96dc78f82a8364",
+    "repair_input_sha256":  "93da294577014586e1c95f5ea999358962ed66ec0f0a95c3f7022f70b4dd4615",
+    "final_response_file_sha256":  "a7540ebc4e5a2f90aa0f9ebeb30940cdcd6556b42a65f633493b82dc29157991",
+    "canonical_validation":  "PASS_PROVIDER_NEUTRAL_LLM_BRIDGE",
+    "q0_read":  false,
+    "oos_read":  false
+}

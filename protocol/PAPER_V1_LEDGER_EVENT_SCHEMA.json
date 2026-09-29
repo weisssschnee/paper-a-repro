@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "paper-v1-ledger-event-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "run_id", "arm", "replicate_id", "sequence_no", "event_type",
+    "economic_calls_before", "economic_calls_after", "prev_event_hash", "event_hash",
+    "q0_read", "oos_read"
+  ],
+  "properties": {
+    "schema_version": {"const": "paper-v1-ledger-event-v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "arm": {"enum": ["F", "P", "R", "L", "L0"]},
+    "replicate_id": {"type": "string", "minLength": 1},
+    "sequence_no": {"type": "integer", "minimum": 0},
+    "event_type": {"enum": [
+      "RUN_START", "CEM_GENERATION", "ECONOMIC_EVALUATION", "PROMOTION", "EVIDENCE_PACKET",
+      "CONTROLLER_DECISION", "INTERVENTION", "FORMULATION_TRANSITION", "FAILURE_LABEL",
+      "FORMAL_ADMISSION", "NOVELTY", "RUN_STOP", "INCIDENT"
+    ]},
+    "economic_calls_before": {"type": "integer", "minimum": 0},
+    "economic_calls_after": {"type": "integer", "minimum": 0},
+    "decision_epoch": {"type": ["integer", "null"], "minimum": 0},
+    "stage": {"enum": ["SCREEN8", "EXTENDED24", "FULLTRAIN_COURT", "NOVELTY", "NONE", null]},
+    "formulation_before": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "formulation_after": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "evidence_packet_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "action": {"enum": [
+      "CONTINUE_LOCAL_SEARCH", "CHANGE_PARAMETERS", "CHANGE_REPRESENTATION", "CHANGE_CONTEXT",
+      "CHANGE_STATE_ACTION", "CHANGE_MECHANISM", "ABANDON_BASIN", null
+    ]},
+    "payload_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "cem_state_before_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "cem_state_after_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "failure_labels": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"enum": [
+        "MECHANISM_FAILURE", "REPRESENTATION_FAILURE", "REGIME_CONTEXT_FAILURE", "STATE_ACTION_FAILURE",
+        "LOCAL_PARAMETERIZATION_FAILURE", "EXECUTION_COST_FAILURE", "REPLICATION_FAILURE", "NOVELTY_FAILURE"
+      ]}
+    },
+    "outcome_summary": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "gross_sum": {"type": ["number", "null"]},
+        "net_sum": {"type": ["number", "null"]},
+        "transaction_cost_sum": {"type": ["number", "null"]},
+        "turnover_sum": {"type": ["number", "null"]},
+        "active_hours": {"type": ["integer", "null"], "minimum": 0},
+        "active_assets": {"type": ["integer", "null"], "minimum": 0},
+        "formal_eligible": {"type": ["boolean", "null"]},
+        "novelty_status": {"enum": ["NEW", "DUPLICATE", "UNRESOLVED", "NOT_APPLIED", null]}
+      }
+    },
+    "metadata": {"type": "object"},
+    "prev_event_hash": {"anyOf": [{"const": "GENESIS"}, {"type": "string", "pattern": "^[0-9a-f]{64}$"}]},
+    "event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "q0_read": {"const": false},
+    "oos_read": {"const": false}
+  }
+}

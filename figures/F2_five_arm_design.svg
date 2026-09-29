@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<style>text{font-family:Arial,Helvetica,sans-serif;font-size:28px;fill:currentColor}.small{font-size:24px}.title{font-size:36px;font-weight:700}.label{font-weight:700}.axis{stroke:currentColor;stroke-width:2}.ci{stroke:currentColor;stroke-width:4}.box{fill:none;stroke:currentColor;stroke-width:2.5}.thin{fill:none;stroke:currentColor;stroke-width:2}.dot{fill:currentColor}.mean{fill:none;stroke:currentColor;stroke-width:4}</style>
+<rect x="35" y="230" width="150" height="84" rx="10" class="box"/>
+<text x="110" y="265" text-anchor="middle">Matched</text><text x="110" y="295" text-anchor="middle">replicate</text>
+<line x1="185" y1="272" x2="255" y2="83" class="thin"/>
+<rect x="255" y="45" width="360" height="78" rx="10" class="box"/>
+<text x="280" y="79" class="label">F</text>
+<text x="330" y="79">Fixed</text>
+<text x="330" y="110" class="small">baseline</text>
+<line x1="615" y1="84" x2="700" y2="84" class="axis"/>
+<line x1="185" y1="272" x2="255" y2="183" class="thin"/>
+<rect x="255" y="145" width="360" height="78" rx="10" class="box"/>
+<text x="280" y="179" class="label">P</text>
+<text x="330" y="179">Periodic</text>
+<text x="330" y="210" class="small">P-F</text>
+<line x1="615" y1="184" x2="700" y2="184" class="axis"/>
+<line x1="185" y1="272" x2="255" y2="283" class="thin"/>
+<rect x="255" y="245" width="360" height="78" rx="10" class="box"/>
+<text x="280" y="279" class="label">R</text>
+<text x="330" y="279">Rule + CEM</text>
+<text x="330" y="310" class="small">R-F / R-P</text>
+<line x1="615" y1="284" x2="700" y2="284" class="axis"/>
+<line x1="185" y1="272" x2="255" y2="383" class="thin"/>
+<rect x="255" y="345" width="360" height="78" rx="10" class="box"/>
+<text x="280" y="379" class="label">L</text>
+<text x="330" y="379">LLM + CEM</text>
+<text x="330" y="410" class="small">L-R</text>
+<line x1="615" y1="384" x2="700" y2="384" class="axis"/>
+<line x1="185" y1="272" x2="255" y2="483" class="thin"/>
+<rect x="255" y="445" width="360" height="78" rx="10" class="box"/>
+<text x="280" y="479" class="label">L0</text>
+<text x="330" y="479">LLM + proposals</text>
+<text x="330" y="510" class="small">L-L0</text>
+<line x1="615" y1="484" x2="700" y2="484" class="axis"/>
+<rect x="700" y="205" width="260" height="135" rx="10" class="box"/>
+<text x="830" y="252" text-anchor="middle">Common evaluator</text>
+<text x="830" y="287" text-anchor="middle">and court</text>
+<text x="830" y="320" text-anchor="middle" class="small">same budget / firewall</text>
+</svg>

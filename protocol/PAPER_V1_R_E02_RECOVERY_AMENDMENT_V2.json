@@ -1,0 +1,47 @@
+{
+  "schema": "paper-v1-r-e02-recovery-amendment-v2",
+  "decision": "FROZEN_BEFORE_FIRST_R_E02_FULLTRAIN_ECONOMIC_CALL",
+  "preceding_recovery_binding": "protocol/PAPER_V1_R_E02_INFRASTRUCTURE_RECOVERY_BINDING.json",
+  "new_incident": "artifacts/prospective/P01/E02/PV1_P01_R_E02_FULLTRAIN_TIME_ALIAS_INCIDENT.json",
+  "incident_id": "R_E02_FULLTRAIN_TIME_COLUMN_ALIAS",
+  "pre_amendment_accounting": {
+    "charged_search_calls": 128,
+    "charged_extended16_calls_completed_but_not_yet_ledgered": 16,
+    "charged_fulltrain_calls": 0,
+    "fulltrain_target_outcomes_evaluated": false,
+    "q0_read": false,
+    "oos_read": false
+  },
+  "target_loader_fix": {
+    "file": "evaluator/paper_v1_targets.py",
+    "sha256": "8d315d6f5d5ad20b870c13e97476caaa28bdd7b567b762bf839f022d0c80bf55",
+    "semantics": "execution_time is accepted as the exact frozen V0 target time key and normalized to internal decision_time with no temporal shift/floor/fill",
+    "historical_source_support": "old V0 evaluate_specialist_fulltrain_v0.py pivots target on execution_time directly",
+    "both_time_columns_policy": "require exact equality or fail closed"
+  },
+  "recovery_script_v2": {
+    "file": "scripts/recover_paper_v1_p01_r_e02_qualification_77o.py",
+    "sha256": "c36a3e7eb6bc008a4a60d2ca5e8a17c4f0505f7e134d150cbb605d01c8fe300b",
+    "required_exact_checks_before_any_new_charged_call": [
+      "recovered E02 local-best formulation id equals ledger formulation_after",
+      "recovered E02 CEM state hash equals ledger cem_state_after_sha256",
+      "replayed SCREEN8 gate promotes",
+      "replayed EXTENDED24 gate promotes, matching the prior fulltrain-entry trace"
+    ],
+    "ledger_backfill": "after exact replay, append one PROMOTION event 128->144 for the original 16 completed EXTENDED24 calls, then execute first-time FULLTRAIN and append 144->168",
+    "duplicate_replay_accounting": "64 SCREEN8 replay block evaluations and 16 EXTENDED24 replay block evaluations are infrastructure recovery overhead and are not charged again to treatment budget"
+  },
+  "validation": {
+    "target_runtime_test": "tests/test_target_runtime_v1.py",
+    "assertions": "12/12 PASS",
+    "timestamp_alias_no_shift": true
+  },
+  "forbidden_changes": [
+    "no gate/court/cost/accounting threshold change",
+    "no feature/formulation/controller change",
+    "no target byte modification",
+    "no Q0/OOS read",
+    "no outcome-conditioned recovery branch"
+  ],
+  "firewall": {"q0_read": false, "oos_read": false, "submission": false, "trading": false}
+}

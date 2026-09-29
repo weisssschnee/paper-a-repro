@@ -1,0 +1,46 @@
+{
+  "schema": "paper-v1-main-v2-mechanism-exhaustion-policy-v1",
+  "decision": "PROPOSED_CORRECTION_AFTER_V1_FROZEN_CONTRACT_CONTRADICTION_NO_ECONOMIC_CALLS_AUTHORIZED_YET",
+  "purpose": "make the reformulation state machine total across all 16 frozen decision epochs while preserving the original mechanism family universe",
+  "trigger": {
+    "actions": ["CHANGE_MECHANISM", "ABANDON_BASIN"],
+    "condition": "V1 next_unused_family returns null because every frozen archetype family is already present in lineage.used_archetype_families"
+  },
+  "v2_rule": {
+    "family_universe": "unchanged PAPER_V1_FORMULATION_SEED_BANK seed_families",
+    "permutation": "unchanged SHA256-ranked MECHANISM_PERMUTATION from the replicate payload seed",
+    "cycle_rollover_target": "first family in the same frozen permutation that is not the current family",
+    "terminal_trajectory": false,
+    "cycle_reset": true,
+    "lineage_used_archetype_families_after_rollover": ["TARGET_ONLY"],
+    "fresh_instantiation": "same frozen instantiate() with seed_salt bound to the V2 payload_id",
+    "outcome_conditioning": false
+  },
+  "non_exhausted_path": {
+    "require_v1_payload_byte_identity": true,
+    "require_v1_application_semantics_identity": true
+  },
+  "unchanged": [
+    "arm ontology F/P/R/L/L0",
+    "controller policies",
+    "64-search-call decision clock",
+    "16 decision epochs",
+    "1024 fixed search calls per arm",
+    "PIT/available-time semantics",
+    "evaluator/cost/funding semantics",
+    "SCREEN8/EXTENDED24/FULLTRAIN gates",
+    "formal specialist court",
+    "novelty comparator/reference",
+    "Q0/OOS firewall",
+    "primary KPI/endpoints"
+  ],
+  "preauthorization_gates": [
+    "all V2 unit tests pass",
+    "non-exhausted V1 parity pass",
+    "64-consecutive-mechanism-transition freshness selftest pass for every M01-M10 frozen seed",
+    "carry-forward economic-path-equivalence audit completed before any V2 confirmatory economic call",
+    "new authority receipt frozen before any V2 confirmatory economic call"
+  ],
+  "q0_read": false,
+  "oos_read": false
+}

@@ -1,0 +1,9 @@
+{
+  "extract": "F1_intervention_authority.extract.json",
+  "extract_sha256": "a7bef90721bad06ff7cec1a6c3274c2918631e04333340d9021fbcd54e6e07bf",
+  "figure": "F1_intervention_authority.svg",
+  "figure_sha256": "748c4a74288fa967e8fa200d55157e19a35c867947d98e1801f9b9d86f57430f",
+  "oos_read": false,
+  "q0_read": false,
+  "schema": "paper-a-figure-receipt-v1"
+}

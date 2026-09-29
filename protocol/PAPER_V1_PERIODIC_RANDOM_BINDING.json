@@ -1,0 +1,50 @@
+{
+  "schema": "paper-v1-periodic-random-controller-v1",
+  "decision": "FROZEN_PRE_PILOT_PERIODIC_RANDOM_CONTROLLER",
+  "arm": "P",
+  "purpose": "frequency/control arm for non-evidence-conditioned reformulation",
+  "decision_cadence_economic_calls": 64,
+  "evidence_use": {
+    "packet_is_recorded": true,
+    "packet_values_affect_action": false,
+    "packet_values_affect_payload": false,
+    "allowed_inputs": ["replicate_id", "decision_epoch", "replicate_payload_rng_seed", "used_payload_ids", "used_mechanism_families"]
+  },
+  "schedule": {
+    "odd_decision_epochs": "CONTINUE_LOCAL_SEARCH",
+    "even_decision_epochs": "FORCED_REFORMULATION",
+    "expected_reformulation_fraction_over_six_pilot_epochs": 0.5,
+    "reason": "neutral predeclared cadence; not tuned from Paper V1 outcomes"
+  },
+  "forced_reformulation_actions": [
+    "CHANGE_REPRESENTATION",
+    "CHANGE_CONTEXT",
+    "CHANGE_STATE_ACTION",
+    "CHANGE_MECHANISM",
+    "ABANDON_BASIN"
+  ],
+  "action_selection": {
+    "distribution": "uniform_over_five_forced_reformulation_actions",
+    "rng": "SHA256 counter RNG derived only from replicate_payload_rng_seed + replicate_id + decision_epoch",
+    "fallback_if_selected_payload_exhausted": "ABANDON_BASIN",
+    "outcome_conditioning": false
+  },
+  "payload_selection": {
+    "binding": "protocol/PAPER_V1_FORMULATION_MUTATION_BANK.json",
+    "runtime": "scripts/formulation_payload_generator.py + scripts/apply_formulation_payload.py",
+    "rule": "selected action is applied through the same deterministic legal payload universe as R/L; P has no private mutation operator"
+  },
+  "anti_strawman": {
+    "same_decision_opportunities_as_R_L": true,
+    "same_local_cem_as_F_R_L": true,
+    "same_evaluator_call_budget": true,
+    "same_formulation_universe": true,
+    "same_failure_court_and_promotion_gates": true
+  },
+  "firewall": {
+    "financial_outcomes_used_to_choose_schedule": false,
+    "paper_v1_outcomes_used": false,
+    "q0_read": false,
+    "oos_read": false
+  }
+}

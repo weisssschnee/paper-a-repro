@@ -1,0 +1,17 @@
+{
+  "authority": [
+    "V1_PROTOCOL.md",
+    "PV1M-016"
+  ],
+  "oos_read": false,
+  "q0_read": false,
+  "stages": [
+    "Hypothesis",
+    "Economic\nbasin",
+    "Replicated\nbasin",
+    "Net-positive\nrealization",
+    "Formal\nadmission",
+    "Scoped-new\nadmission"
+  ],
+  "type": "frozen_funnel_schematic"
+}

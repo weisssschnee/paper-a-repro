@@ -1,0 +1,82 @@
+{
+  "schema": "paper-v1-parity-policy-v1",
+  "decision": "FROZEN_PRE_PILOT_TIERED_PARITY_POLICY",
+  "principle": "Byte identity is strong provenance evidence, not a universal scientific-validity requirement. Prospective Paper V1 validity depends on shared pre-frozen authority, PIT/availability semantics, formulation/evaluator semantics, and bounded material differences.",
+  "scope_separation": {
+    "historical_claim_reproduction": "Prefer and report exact historical artifact hashes when available. A byte mismatch prevents claiming exact reproduction of that historical artifact, but does not by itself invalidate a new prospective experiment.",
+    "prospective_paper_v1": "All matched arms must use the same pre-frozen authority snapshot and evaluator semantics. Exact equality to V0/E1 historical parquet bytes is not required if the parity gate below passes before prospective outcomes are observed."
+  },
+  "tiers": {
+    "GREEN": {
+      "meaning": "scientifically equivalent for the intended experiment; no launch block",
+      "conditions_any": [
+        "exact byte/hash equality",
+        "same semantic contracts and exact coordinate/NaN masks with numeric differences within GREEN numeric tolerance"
+      ],
+      "numeric_tolerance": {
+        "absolute": 1e-8,
+        "relative": 1e-7,
+        "rule": "pass when abs_diff <= absolute OR relative_diff <= relative for finite overlapping values"
+      },
+      "coordinate_symmetric_difference_fraction_max": 0.001,
+      "nan_mask_difference_fraction_max_per_feature": 0.001
+    },
+    "AMBER": {
+      "meaning": "minor implementation/data-revision drift; does not automatically block a prospective matched experiment, but requires a provenance note and all arms must use the same frozen snapshot",
+      "numeric_tolerance": {
+        "absolute": 1e-6,
+        "relative": 1e-5
+      },
+      "coordinate_symmetric_difference_fraction_max": 0.005,
+      "nan_mask_difference_fraction_max_per_feature": 0.005,
+      "requirements": [
+        "no PIT or available-time semantic change",
+        "no feature/evaluator/mapping/court semantic change",
+        "differences are not outcome-conditioned",
+        "differences are frozen before prospective outcomes",
+        "sensitivity/provenance note retained"
+      ]
+    },
+    "RED": {
+      "meaning": "hard fail / strategic review required",
+      "triggers": [
+        "Q0/OOS or future outcome read used to construct/search/select the authority",
+        "PIT or available-time contract violation/change",
+        "future-centered or outcome-conditioned representation",
+        "feature semantic formula change hidden as numeric parity",
+        "mapping, accounting, court, cost or eligibility semantic drift",
+        "coordinate or missingness drift above AMBER limits without a predeclared scientific reason",
+        "numeric drift above AMBER tolerance on materially used features",
+        "arm-specific authority differences"
+      ]
+    }
+  },
+  "byte_hash_use": {
+    "required_for": [
+      "identifying an exact frozen artifact",
+      "proving exact historical reproduction when that claim is made",
+      "binding immutable evaluator/vendor source files"
+    ],
+    "not_required_for": [
+      "declaring two independently serialized numeric sidecars scientifically equivalent under this policy",
+      "admitting a new prospective common data snapshot that is frozen before outcomes"
+    ]
+  },
+  "known_pre_pilot_example": {
+    "duplicate_feature": "premium_z_24h",
+    "observed_max_abs_diff_approx": 4e-10,
+    "classification": "GREEN",
+    "note": "NaN masks matched and the difference is far below the frozen GREEN tolerance; it is not a scientific failure."
+  },
+  "governance": {
+    "pilot_outcomes_may_change_thresholds": false,
+    "main_outcomes_may_change_thresholds": false,
+    "pre_pilot_bug_or_provenance_correction_allowed": true,
+    "all_parity incidents_are_logged": true
+  },
+  "firewall": {
+    "q0_read": false,
+    "oos_read": false,
+    "paper_v1_experiments_started": false
+  }
+}

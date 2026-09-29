@@ -1,0 +1,259 @@
+{
+  "authority": "PV1M-016",
+  "endpoint": "scoped_new_admissions_per_1000_calls",
+  "oos_read": false,
+  "q0_read": false,
+  "type": "replicate_dot_plot",
+  "values": [
+    {
+      "arm": "F",
+      "replicate": "M01",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M02",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M03",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M04",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M05",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M06",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M07",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M08",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M09",
+      "value": 0.0
+    },
+    {
+      "arm": "F",
+      "replicate": "M10",
+      "value": 0.0
+    },
+    {
+      "arm": "P",
+      "replicate": "M01",
+      "value": 0.0
+    },
+    {
+      "arm": "P",
+      "replicate": "M02",
+      "value": 0.7440476190476191
+    },
+    {
+      "arm": "P",
+      "replicate": "M03",
+      "value": 0.0
+    },
+    {
+      "arm": "P",
+      "replicate": "M04",
+      "value": 0.0
+    },
+    {
+      "arm": "P",
+      "replicate": "M05",
+      "value": 0.0
+    },
+    {
+      "arm": "P",
+      "replicate": "M06",
+      "value": 1.6891891891891893
+    },
+    {
+      "arm": "P",
+      "replicate": "M07",
+      "value": 1.6129032258064515
+    },
+    {
+      "arm": "P",
+      "replicate": "M08",
+      "value": 0.0
+    },
+    {
+      "arm": "P",
+      "replicate": "M09",
+      "value": 0.0
+    },
+    {
+      "arm": "P",
+      "replicate": "M10",
+      "value": 0.0
+    },
+    {
+      "arm": "R",
+      "replicate": "M01",
+      "value": 0.702247191011236
+    },
+    {
+      "arm": "R",
+      "replicate": "M02",
+      "value": 0.0
+    },
+    {
+      "arm": "R",
+      "replicate": "M03",
+      "value": 0.0
+    },
+    {
+      "arm": "R",
+      "replicate": "M04",
+      "value": 0.0
+    },
+    {
+      "arm": "R",
+      "replicate": "M05",
+      "value": 0.0
+    },
+    {
+      "arm": "R",
+      "replicate": "M06",
+      "value": 0.0
+    },
+    {
+      "arm": "R",
+      "replicate": "M07",
+      "value": 0.7911392405063291
+    },
+    {
+      "arm": "R",
+      "replicate": "M08",
+      "value": 0.0
+    },
+    {
+      "arm": "R",
+      "replicate": "M09",
+      "value": 0.0
+    },
+    {
+      "arm": "R",
+      "replicate": "M10",
+      "value": 0.0
+    },
+    {
+      "arm": "L",
+      "replicate": "M01",
+      "value": 0.0
+    },
+    {
+      "arm": "L",
+      "replicate": "M02",
+      "value": 0.0
+    },
+    {
+      "arm": "L",
+      "replicate": "M03",
+      "value": 0.7142857142857143
+    },
+    {
+      "arm": "L",
+      "replicate": "M04",
+      "value": 0.0
+    },
+    {
+      "arm": "L",
+      "replicate": "M05",
+      "value": 0.0
+    },
+    {
+      "arm": "L",
+      "replicate": "M06",
+      "value": 0.0
+    },
+    {
+      "arm": "L",
+      "replicate": "M07",
+      "value": 0.0
+    },
+    {
+      "arm": "L",
+      "replicate": "M08",
+      "value": 1.3297872340425532
+    },
+    {
+      "arm": "L",
+      "replicate": "M09",
+      "value": 0.0
+    },
+    {
+      "arm": "L",
+      "replicate": "M10",
+      "value": 0.8445945945945946
+    },
+    {
+      "arm": "L0",
+      "replicate": "M01",
+      "value": 0.78125
+    },
+    {
+      "arm": "L0",
+      "replicate": "M02",
+      "value": 0.7062146892655368
+    },
+    {
+      "arm": "L0",
+      "replicate": "M03",
+      "value": 0.7668711656441718
+    },
+    {
+      "arm": "L0",
+      "replicate": "M04",
+      "value": 0.0
+    },
+    {
+      "arm": "L0",
+      "replicate": "M05",
+      "value": 0.0
+    },
+    {
+      "arm": "L0",
+      "replicate": "M06",
+      "value": 0.0
+    },
+    {
+      "arm": "L0",
+      "replicate": "M07",
+      "value": 0.8561643835616438
+    },
+    {
+      "arm": "L0",
+      "replicate": "M08",
+      "value": 0.6510416666666666
+    },
+    {
+      "arm": "L0",
+      "replicate": "M09",
+      "value": 0.0
+    },
+    {
+      "arm": "L0",
+      "replicate": "M10",
+      "value": 0.0
+    }
+  ]
+}

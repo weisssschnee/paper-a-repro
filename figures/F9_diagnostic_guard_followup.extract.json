@@ -1,0 +1,43 @@
+{
+  "authority": [
+    "PV1F-002",
+    "PV1F-006"
+  ],
+  "ci": [
+    -1.4068021800384787,
+    6.740135513371811
+  ],
+  "development_association": {
+    "evidence_role": "development_only",
+    "representation_change_next_screen8": [
+      15,
+      15
+    ]
+  },
+  "exact_signflip_p": 0.1875,
+  "mean": 2.6666666666666665,
+  "oos_read": false,
+  "paired_differences": [
+    3,
+    7,
+    6,
+    -2,
+    -2,
+    4
+  ],
+  "positive_gate": {
+    "exact_p_lt_0_05": false,
+    "mean_difference_lt_zero": false,
+    "pass": false
+  },
+  "q0_read": false,
+  "replicates": [
+    "M11",
+    "M12",
+    "M13",
+    "M14",
+    "M15",
+    "M16"
+  ],
+  "type": "followup_paired_difference"
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "paper-v1-local-cem-binding-v1",
+  "decision": "FROZEN_PRE_PILOT_COMMON_LOCAL_CEM",
+  "arms": ["F", "P", "R", "L"],
+  "excluded_arm": "L0",
+  "role": "within-formulation local parameter exploitation only; never changes mechanism, representation, context semantics, or state-action family",
+  "decision_epoch_calls": 64,
+  "screen_blocks_per_proposal": 8,
+  "proposals_per_generation": 8,
+  "proposal_composition": {
+    "current_anchor": 1,
+    "new_cem_samples": 7,
+    "anchor_counts_as_economic_candidate": true
+  },
+  "elite_count": 2,
+  "update": {
+    "alpha": 0.5,
+    "continuous_initial_std_fraction_of_range": 0.25,
+    "continuous_min_std_fraction_of_range": 0.04,
+    "categorical_current_value_prior": 0.55,
+    "categorical_probability_floor": 0.05
+  },
+  "parameter_types": {
+    "categorical_domains": ["return_horizon_h", "slow_horizon_h", "normalization_lookback_h", "absolute_z_threshold", "tail_fraction", "refresh_hours", "state_minimum_hold_hours"],
+    "continuous_ranges": ["state_hold_l1_threshold", "state_switch_l1_threshold", "state_partial_fraction"],
+    "fixed": ["gross_target"]
+  },
+  "ranking": {
+    "primary": "robust_net_score = min(mean post-cost logNAV on the four anchor screen blocks, mean post-cost logNAV on the four counter screen blocks)",
+    "tie_break_1": "higher aggregate gross_sum_8block",
+    "tie_break_2": "lower aggregate turnover_sum_8block",
+    "tie_break_3": "lexicographically smaller parameter fingerprint"
+  },
+  "seed_semantics": "SHA256-derived generator seed from replicate parameter_rng_seed + formulation_semantic_fingerprint + local_attempt_index; identical inputs imply identical proposals",
+  "restart": {
+    "on_semantic_reformulation": "fresh CEM state centered on successor formulation parameters",
+    "on_CHANGE_PARAMETERS": "fresh CEM state centered on changed parameterization",
+    "on_CONTINUE_LOCAL_SEARCH": "carry updated CEM state",
+    "state_hash_required_in_ledger": true
+  },
+  "anti_confounds": {
+    "same_source_for_F_P_R_L": true,
+    "same_sample_count": true,
+    "same_elite_count": true,
+    "same_parameter_domains": true,
+    "outcome_dependent_domain_expansion": false,
+    "semantic_mutation_from_cem": false
+  },
+  "firewall": {
+    "q0_read": false,
+    "oos_read": false,
+    "paper_v1_outcomes_used_to_design": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "arm": "P",
+  "decision": "PASS_PROSPECTIVE_EPOCH_COMPLETE",
+  "decision_epoch": 1,
+  "evidence_packet_sha256": "90b8fe682c20c4e1277a25ed0eec224097a0b97fdab39ab130efad525c12660c",
+  "execution_git_head": "8635324e37d9afef54e6ee8ebe454cb99f564bd9",
+  "extended_gate": null,
+  "formal_eligible": null,
+  "high_level_action": "CONTINUE_LOCAL_SEARCH",
+  "ledger_tip_hash": "0e6f6d7a6e68dc456f24551c3a9ff28baaad81034b3ffaf83bc2f2df7b9d43fc",
+  "local_best_formulation_id": "b37102203a7faa4f46c42385758ae4bb6be2a2c95d8ea95a57a24583b98fe1c5",
+  "oos_read": false,
+  "phase": "MAIN",
+  "q0_read": false,
+  "qualification_calls_after": 0,
+  "replicate_id": "M07",
+  "run_id": "PV1_M07_P",
+  "schema": "paper-v1-main-epoch-result-v1",
+  "screen_gate": {
+    "checks": {
+      "active_block_count_ge_1": true,
+      "constructible": true,
+      "gross_positive": false,
+      "support_clause": true
+    },
+    "promote": false,
+    "stage": "SCREEN8"
+  },
+  "search_calls_after": 64,
+  "successor_formulation_id": "b37102203a7faa4f46c42385758ae4bb6be2a2c95d8ea95a57a24583b98fe1c5",
+  "terminal_stage": "SCREEN8",
+  "total_economic_calls_after": 64
+}

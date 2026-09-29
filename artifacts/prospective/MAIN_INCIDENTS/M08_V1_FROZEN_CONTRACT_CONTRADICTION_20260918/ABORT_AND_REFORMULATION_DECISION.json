@@ -1,0 +1,46 @@
+{
+  "contradiction": {
+    "fixed_budget_contract": {
+      "decision_epochs_per_arm": 16,
+      "fixed_search_calls_per_arm": 1024,
+      "search_calls_per_epoch": 64
+    },
+    "missing_predeclared_case": "no frozen absorbing continuation or family-revisit rule exists for early terminal before 1024 search calls",
+    "payload_runtime_contract": "CHANGE_MECHANISM/ABANDON_BASIN selects next unused frozen mechanism family; if none exists, payload runtime emits terminal_trajectory=true"
+  },
+  "decision": "INVALIDATE_PAPER_V1_MAIN_CONFIRMATORY_FIXED_BUDGET_INFERENCE_NO_RESTART3",
+  "economic_outcomes_used_to_choose_resolution": false,
+  "observed_reproductions": [
+    {
+      "action": "ABANDON_BASIN",
+      "arm": "L0",
+      "attempt": "M08 restart1",
+      "search_calls_after": 960,
+      "terminal_epoch": 15
+    },
+    {
+      "action": "ABANDON_BASIN",
+      "arm": "L0",
+      "attempt": "M08 restart2",
+      "search_calls_after": 640,
+      "terminal_epoch": 10
+    }
+  ],
+  "oos_read": false,
+  "q0_read": false,
+  "replicate_id": "M08",
+  "required_next_step": "freeze a corrected V2 mechanism-exhaustion policy before any new confirmatory economic calls; then rerun the confirmatory experiment under one coherent contract",
+  "resolution_basis": "mechanical contract inconsistency and repeated early terminal states only",
+  "schema": "paper-v1-main-frozen-contract-contradiction-v1",
+  "scientific_decision": {
+    "do_not_compute_planned_confirmatory_arm_inference_under_v1": true,
+    "do_not_pad_with_dummy_epochs": true,
+    "do_not_relax_closure": true,
+    "do_not_restart_until_nonterminal": true,
+    "reason": "repeated restarts would condition validity on realized controller trajectory and create selection bias",
+    "reason_closure": "16 epochs and 1024 search calls were frozen before first main economic call",
+    "reason_dummy": "no predeclared absorbing/no-op search semantics and fixed search-call definition would be violated",
+    "retain_completed_M01_M07_M09_M10_as_descriptive_and_diagnostic_evidence": true
+  },
+  "scientific_execution_git_head": "8635324e37d9afef54e6ee8ebe454cb99f564bd9"
+}

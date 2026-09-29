@@ -1,0 +1,204 @@
+{
+  "decision": "PASS_FOLLOWUP_COMPLETE",
+  "exact_two_sided_signflip_p": 0.1875,
+  "lower_is_better": true,
+  "mean_paired_difference": 2.6666666666666665,
+  "oos_read": false,
+  "paired_differences": [
+    3,
+    7,
+    6,
+    -2,
+    -2,
+    4
+  ],
+  "paired_t_95ci": [
+    -1.4068021800384787,
+    6.740135513371811
+  ],
+  "positive_claim_gate": {
+    "exact_p_lt_0_05": false,
+    "mean_difference_lt_zero": false,
+    "pass": false
+  },
+  "primary_contrast": "LG-L",
+  "primary_endpoint": "SCREEN8 terminal visits per 16-epoch replicate",
+  "q0_read": false,
+  "replicates": [
+    {
+      "L": {
+        "charged_economic_calls": 1096,
+        "formal_admissions": 0,
+        "fulltrain_visits": 1,
+        "guard_applied": 0,
+        "intervention_followed_by_screen8": 12,
+        "novelty_events": 0,
+        "qualification_calls": 72,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 13,
+        "semantic_cooldowns": 0,
+        "semantic_interventions": 16
+      },
+      "LG": {
+        "charged_economic_calls": 1024,
+        "formal_admissions": 0,
+        "fulltrain_visits": 0,
+        "guard_applied": 15,
+        "intervention_followed_by_screen8": 0,
+        "novelty_events": 0,
+        "qualification_calls": 0,
+        "representation_blocks": 15,
+        "screen8_terminal_visits": 16,
+        "semantic_cooldowns": 0,
+        "semantic_interventions": 1
+      },
+      "replicate_id": "M11"
+    },
+    {
+      "L": {
+        "charged_economic_calls": 1360,
+        "formal_admissions": 0,
+        "fulltrain_visits": 8,
+        "guard_applied": 0,
+        "intervention_followed_by_screen8": 6,
+        "novelty_events": 0,
+        "qualification_calls": 336,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 7,
+        "semantic_cooldowns": 0,
+        "semantic_interventions": 14
+      },
+      "LG": {
+        "charged_economic_calls": 1104,
+        "formal_admissions": 0,
+        "fulltrain_visits": 2,
+        "guard_applied": 12,
+        "intervention_followed_by_screen8": 1,
+        "novelty_events": 0,
+        "qualification_calls": 80,
+        "representation_blocks": 12,
+        "screen8_terminal_visits": 14,
+        "semantic_cooldowns": 0,
+        "semantic_interventions": 2
+      },
+      "replicate_id": "M12"
+    },
+    {
+      "L": {
+        "charged_economic_calls": 1216,
+        "formal_admissions": 0,
+        "fulltrain_visits": 4,
+        "guard_applied": 0,
+        "intervention_followed_by_screen8": 7,
+        "novelty_events": 0,
+        "qualification_calls": 192,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 10,
+        "semantic_cooldowns": 0,
+        "semantic_interventions": 14
+      },
+      "LG": {
+        "charged_economic_calls": 1024,
+        "formal_admissions": 0,
+        "fulltrain_visits": 0,
+        "guard_applied": 6,
+        "intervention_followed_by_screen8": 6,
+        "novelty_events": 0,
+        "qualification_calls": 0,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 16,
+        "semantic_cooldowns": 6,
+        "semantic_interventions": 7
+      },
+      "replicate_id": "M13"
+    },
+    {
+      "L": {
+        "charged_economic_calls": 1560,
+        "formal_admissions": 0,
+        "fulltrain_visits": 13,
+        "guard_applied": 0,
+        "intervention_followed_by_screen8": 2,
+        "novelty_events": 0,
+        "qualification_calls": 536,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 2,
+        "semantic_cooldowns": 0,
+        "semantic_interventions": 16
+      },
+      "LG": {
+        "charged_economic_calls": 1664,
+        "formal_admissions": 0,
+        "fulltrain_visits": 16,
+        "guard_applied": 8,
+        "intervention_followed_by_screen8": 0,
+        "novelty_events": 0,
+        "qualification_calls": 640,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 0,
+        "semantic_cooldowns": 8,
+        "semantic_interventions": 8
+      },
+      "replicate_id": "M14"
+    },
+    {
+      "L": {
+        "charged_economic_calls": 1160,
+        "formal_admissions": 0,
+        "fulltrain_visits": 3,
+        "guard_applied": 0,
+        "intervention_followed_by_screen8": 9,
+        "novelty_events": 0,
+        "qualification_calls": 136,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 12,
+        "semantic_cooldowns": 0,
+        "semantic_interventions": 12
+      },
+      "LG": {
+        "charged_economic_calls": 1240,
+        "formal_admissions": 0,
+        "fulltrain_visits": 5,
+        "guard_applied": 5,
+        "intervention_followed_by_screen8": 3,
+        "novelty_events": 0,
+        "qualification_calls": 216,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 10,
+        "semantic_cooldowns": 5,
+        "semantic_interventions": 6
+      },
+      "replicate_id": "M15"
+    },
+    {
+      "L": {
+        "charged_economic_calls": 1176,
+        "formal_admissions": 0,
+        "fulltrain_visits": 3,
+        "guard_applied": 0,
+        "intervention_followed_by_screen8": 4,
+        "novelty_events": 0,
+        "qualification_calls": 152,
+        "representation_blocks": 0,
+        "screen8_terminal_visits": 11,
+        "semantic_cooldowns": 0,
+        "semantic_interventions": 9
+      },
+      "LG": {
+        "charged_economic_calls": 1064,
+        "formal_admissions": 0,
+        "fulltrain_visits": 1,
+        "guard_applied": 6,
+        "intervention_followed_by_screen8": 5,
+        "novelty_events": 0,
+        "qualification_calls": 40,
+        "representation_blocks": 3,
+        "screen8_terminal_visits": 15,
+        "semantic_cooldowns": 3,
+        "semantic_interventions": 6
+      },
+      "replicate_id": "M16"
+    }
+  ],
+  "schema": "paper-lg-followup-result-v1"
+}

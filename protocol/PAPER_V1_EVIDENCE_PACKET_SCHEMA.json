@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "paper-v1-evidence-packet-v1",
+  "title": "Paper V1 controller-visible evidence packet",
+  "description": "The complete controller-visible state at one high-level intervention decision point. It intentionally excludes the chosen intervention and all successor outcomes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "packet_id",
+    "decision_point_id",
+    "provenance",
+    "formulation",
+    "evidence",
+    "mechanical_diagnostics",
+    "controller_visibility",
+    "firewall"
+  ],
+  "properties": {
+    "schema_version": {"const": "paper-v1-evidence-packet-v1"},
+    "packet_id": {"type": "string", "minLength": 1},
+    "decision_point_id": {"type": "string", "minLength": 1},
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_mode", "project_alias", "git_head", "artifact_path", "artifact_sha256", "evaluation_stage"],
+      "properties": {
+        "source_mode": {"enum": ["HISTORICAL_DEVELOPMENT_REPLAY", "PROSPECTIVE_PAPER_V1"]},
+        "project_alias": {"type": "string"},
+        "git_head": {"type": "string"},
+        "artifact_path": {"type": "string"},
+        "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "evaluation_stage": {"enum": ["PRE_EVAL", "SCREEN8", "EXTENDED24", "FULLTRAIN"]}
+      }
+    },
+    "formulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_id",
+        "parent_candidate_id",
+        "mechanism_family_id",
+        "representation_graph_fingerprint",
+        "context_fingerprint",
+        "state_action_fingerprint",
+        "parameterization_fingerprint",
+        "formulation_semantic_fingerprint"
+      ],
+      "properties": {
+        "candidate_id": {"type": "string"},
+        "parent_candidate_id": {"type": ["string", "null"]},
+        "mechanism_family_id": {"type": "string"},
+        "representation_graph_fingerprint": {"type": "string"},
+        "context_fingerprint": {"type": "string"},
+        "state_action_fingerprint": {"type": "string"},
+        "parameterization_fingerprint": {"type": "string"},
+        "formulation_semantic_fingerprint": {"type": "string"}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["constructibility", "economics", "replication", "support", "concentration", "window_summary", "intervention_history", "court", "novelty", "local_search", "resource"],
+      "properties": {
+        "constructibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reason"],
+          "properties": {
+            "status": {"enum": ["PASS", "FAIL", "DEGENERATE", "UNKNOWN"]},
+            "reason": {"type": ["string", "null"]}
+          }
+        },
+        "economics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["gross_sum", "net_sum", "turnover_sum", "transaction_cost_sum", "funding_cashflow_sum", "net_retention_fraction", "log_final_nav", "maximum_drawdown"],
+          "properties": {
+            "gross_sum": {"type": ["number", "null"]},
+            "net_sum": {"type": ["number", "null"]},
+            "turnover_sum": {"type": ["number", "null"]},
+            "transaction_cost_sum": {"type": ["number", "null"]},
+            "funding_cashflow_sum": {"type": ["number", "null"]},
+            "net_retention_fraction": {"type": ["number", "null"]},
+            "log_final_nav": {"type": ["number", "null"]},
+            "maximum_drawdown": {"type": ["number", "null"]}
+          }
+        },
+        "replication": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["positive_blocks", "active_blocks", "total_blocks", "positive_month_pair_means", "positive_months", "positive_quarters"],
+          "properties": {
+            "positive_blocks": {"type": ["integer", "null"], "minimum": 0},
+            "active_blocks": {"type": ["integer", "null"], "minimum": 0},
+            "total_blocks": {"type": ["integer", "null"], "minimum": 0},
+            "positive_month_pair_means": {"type": ["integer", "null"], "minimum": 0},
+            "positive_months": {"type": ["integer", "null"], "minimum": 0},
+            "positive_quarters": {"type": ["integer", "null"], "minimum": 0}
+          }
+        },
+        "support": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["active_hours", "active_time_fraction", "active_assets", "positive_net_assets"],
+          "properties": {
+            "active_hours": {"type": ["integer", "null"], "minimum": 0},
+            "active_time_fraction": {"type": ["number", "null"]},
+            "active_assets": {"type": ["integer", "null"], "minimum": 0},
+            "positive_net_assets": {"type": ["integer", "null"], "minimum": 0}
+          }
+        },
+        "concentration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["top1_positive_month_share", "top1_positive_asset_share", "top3_positive_asset_share"],
+          "properties": {
+            "top1_positive_month_share": {"type": ["number", "null"]},
+            "top1_positive_asset_share": {"type": ["number", "null"]},
+            "top3_positive_asset_share": {"type": ["number", "null"]}
+          }
+        },
+        "window_summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["evaluated_candidates", "constructibility_failures", "gross_positive_candidates", "net_positive_candidates", "best_gross_sum", "best_net_sum"],
+          "properties": {
+            "evaluated_candidates": {"type": ["integer", "null"], "minimum": 0},
+            "constructibility_failures": {"type": ["integer", "null"], "minimum": 0},
+            "gross_positive_candidates": {"type": ["integer", "null"], "minimum": 0},
+            "net_positive_candidates": {"type": ["integer", "null"], "minimum": 0},
+            "best_gross_sum": {"type": ["number", "null"]},
+            "best_net_sum": {"type": ["number", "null"]}
+          }
+        },
+        "intervention_history": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["decision_epochs_in_current_formulation", "last_action", "state_action_changes_in_current_basin", "parameter_changes_in_current_formulation", "representation_changes_in_current_basin", "context_changes_in_current_basin", "mechanism_changes_in_trajectory"],
+          "properties": {
+            "decision_epochs_in_current_formulation": {"type": ["integer", "null"], "minimum": 0},
+            "last_action": {"type": ["string", "null"]},
+            "state_action_changes_in_current_basin": {"type": ["integer", "null"], "minimum": 0},
+            "parameter_changes_in_current_formulation": {"type": ["integer", "null"], "minimum": 0},
+            "representation_changes_in_current_basin": {"type": ["integer", "null"], "minimum": 0},
+            "context_changes_in_current_basin": {"type": ["integer", "null"], "minimum": 0},
+            "mechanism_changes_in_trajectory": {"type": ["integer", "null"], "minimum": 0}
+          }
+        },
+        "court": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["formal_eligible", "failed_checks", "court_applied"],
+          "properties": {
+            "formal_eligible": {"type": ["boolean", "null"]},
+            "failed_checks": {"type": "array", "items": {"type": "string"}},
+            "court_applied": {"type": "boolean"}
+          }
+        },
+        "novelty": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "reference_id"],
+          "properties": {
+            "status": {"enum": ["NEW", "DUPLICATE", "UNRESOLVED", "NOT_APPLIED"]},
+            "reference_id": {"type": ["string", "null"]}
+          }
+        },
+        "local_search": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["basin_id", "optimizer_active", "calls_spent_in_basin", "local_attempt_index", "best_prior_gross_sum", "best_prior_net_sum", "gross_improvement", "net_improvement", "elite_spread", "boundary_hit_fraction", "stagnation_steps"],
+          "properties": {
+            "basin_id": {"type": ["string", "null"]},
+            "optimizer_active": {"type": ["boolean", "null"]},
+            "calls_spent_in_basin": {"type": ["integer", "null"], "minimum": 0},
+            "local_attempt_index": {"type": ["integer", "null"], "minimum": 0},
+            "best_prior_gross_sum": {"type": ["number", "null"]},
+            "best_prior_net_sum": {"type": ["number", "null"]},
+            "gross_improvement": {"type": ["number", "null"]},
+            "net_improvement": {"type": ["number", "null"]},
+            "elite_spread": {"type": ["number", "null"], "minimum": 0},
+            "boundary_hit_fraction": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+            "stagnation_steps": {"type": ["integer", "null"], "minimum": 0}
+          }
+        },
+        "resource": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["candidate_evaluator_calls", "cumulative_trajectory_calls", "remaining_arm_budget"],
+          "properties": {
+            "candidate_evaluator_calls": {"type": ["integer", "null"], "minimum": 0},
+            "cumulative_trajectory_calls": {"type": ["integer", "null"], "minimum": 0},
+            "remaining_arm_budget": {"type": ["integer", "null"], "minimum": 0}
+          }
+        }
+      }
+    },
+    "mechanical_diagnostics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gross_positive", "net_positive", "cost_exceeds_gross", "gross_to_net_loss", "positive_block_fraction", "active_block_fraction"],
+      "properties": {
+        "gross_positive": {"type": ["boolean", "null"]},
+        "net_positive": {"type": ["boolean", "null"]},
+        "cost_exceeds_gross": {"type": ["boolean", "null"]},
+        "gross_to_net_loss": {"type": ["number", "null"]},
+        "positive_block_fraction": {"type": ["number", "null"]},
+        "active_block_fraction": {"type": ["number", "null"]}
+      }
+    },
+    "controller_visibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["same_packet_for_all_controller_arms", "contains_chosen_intervention", "contains_successor_outcome"],
+      "properties": {
+        "same_packet_for_all_controller_arms": {"const": true},
+        "contains_chosen_intervention": {"const": false},
+        "contains_successor_outcome": {"const": false}
+      }
+    },
+    "firewall": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["q0_read", "oos_read"],
+      "properties": {
+        "q0_read": {"const": false},
+        "oos_read": {"const": false}
+      }
+    }
+  }
+}

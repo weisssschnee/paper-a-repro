@@ -1,0 +1,2283 @@
+{
+  "arm_rows": [
+    {
+      "arm": "F",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M01",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1104,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 2,
+      "qualification_calls": 80,
+      "replicate_id": "M01",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 14,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1424,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 1,
+      "formal_admissions_per_1000_calls": 0.702247191011236,
+      "fulltrain_visits": 10,
+      "qualification_calls": 400,
+      "replicate_id": "M01",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.702247191011236,
+      "screen8_terminal_visits": 6,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1424,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 10,
+      "qualification_calls": 400,
+      "replicate_id": "M01",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 6,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1280,
+      "extended24_terminal_visits": 1,
+      "formal_admissions": 1,
+      "formal_admissions_per_1000_calls": 0.78125,
+      "fulltrain_visits": 6,
+      "qualification_calls": 256,
+      "replicate_id": "M01",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.78125,
+      "screen8_terminal_visits": 9,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M02",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1344,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 2,
+      "formal_admissions_per_1000_calls": 1.4880952380952381,
+      "fulltrain_visits": 8,
+      "qualification_calls": 320,
+      "replicate_id": "M02",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.7440476190476191,
+      "screen8_terminal_visits": 8,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1144,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 3,
+      "qualification_calls": 120,
+      "replicate_id": "M02",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 13,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1464,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 11,
+      "qualification_calls": 440,
+      "replicate_id": "M02",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 5,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1416,
+      "extended24_terminal_visits": 2,
+      "formal_admissions": 1,
+      "formal_admissions_per_1000_calls": 0.7062146892655368,
+      "fulltrain_visits": 9,
+      "qualification_calls": 392,
+      "replicate_id": "M02",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.7062146892655368,
+      "screen8_terminal_visits": 5,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1288,
+      "extended24_terminal_visits": 14,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 1,
+      "qualification_calls": 264,
+      "replicate_id": "M03",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 1,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1200,
+      "extended24_terminal_visits": 1,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 4,
+      "qualification_calls": 176,
+      "replicate_id": "M03",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 11,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1304,
+      "extended24_terminal_visits": 10,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 3,
+      "qualification_calls": 280,
+      "replicate_id": "M03",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 3,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1400,
+      "extended24_terminal_visits": 1,
+      "formal_admissions": 1,
+      "formal_admissions_per_1000_calls": 0.7142857142857143,
+      "fulltrain_visits": 9,
+      "qualification_calls": 376,
+      "replicate_id": "M03",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.7142857142857143,
+      "screen8_terminal_visits": 6,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1304,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 1,
+      "formal_admissions_per_1000_calls": 0.7668711656441718,
+      "fulltrain_visits": 7,
+      "qualification_calls": 280,
+      "replicate_id": "M03",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.7668711656441718,
+      "screen8_terminal_visits": 9,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M04",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M04",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M04",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1064,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 1,
+      "qualification_calls": 40,
+      "replicate_id": "M04",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 15,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1312,
+      "extended24_terminal_visits": 3,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 6,
+      "qualification_calls": 288,
+      "replicate_id": "M04",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 7,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M05",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1296,
+      "extended24_terminal_visits": 2,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 6,
+      "qualification_calls": 272,
+      "replicate_id": "M05",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 8,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1384,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 9,
+      "qualification_calls": 360,
+      "replicate_id": "M05",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 7,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1344,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 8,
+      "qualification_calls": 320,
+      "replicate_id": "M05",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 8,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1384,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 9,
+      "qualification_calls": 360,
+      "replicate_id": "M05",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 7,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1664,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 16,
+      "qualification_calls": 640,
+      "replicate_id": "M06",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 0,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1184,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 2,
+      "formal_admissions_per_1000_calls": 1.6891891891891893,
+      "fulltrain_visits": 4,
+      "qualification_calls": 160,
+      "replicate_id": "M06",
+      "scoped_new_admissions": 2,
+      "scoped_new_admissions_per_1000_calls": 1.6891891891891893,
+      "screen8_terminal_visits": 12,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 2
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1184,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 4,
+      "qualification_calls": 160,
+      "replicate_id": "M06",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 12,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1320,
+      "extended24_terminal_visits": 1,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 7,
+      "qualification_calls": 296,
+      "replicate_id": "M06",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 8,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1544,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 13,
+      "qualification_calls": 520,
+      "replicate_id": "M06",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 3,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1264,
+      "extended24_terminal_visits": 15,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 240,
+      "replicate_id": "M07",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 1,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1240,
+      "extended24_terminal_visits": 1,
+      "formal_admissions": 3,
+      "formal_admissions_per_1000_calls": 2.4193548387096775,
+      "fulltrain_visits": 5,
+      "qualification_calls": 216,
+      "replicate_id": "M07",
+      "scoped_new_admissions": 2,
+      "scoped_new_admissions_per_1000_calls": 1.6129032258064515,
+      "screen8_terminal_visits": 10,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 2
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1264,
+      "extended24_terminal_visits": 10,
+      "formal_admissions": 1,
+      "formal_admissions_per_1000_calls": 0.7911392405063291,
+      "fulltrain_visits": 2,
+      "qualification_calls": 240,
+      "replicate_id": "M07",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.7911392405063291,
+      "screen8_terminal_visits": 4,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1152,
+      "extended24_terminal_visits": 3,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 2,
+      "qualification_calls": 128,
+      "replicate_id": "M07",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 11,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1168,
+      "extended24_terminal_visits": 4,
+      "formal_admissions": 1,
+      "formal_admissions_per_1000_calls": 0.8561643835616438,
+      "fulltrain_visits": 2,
+      "qualification_calls": 144,
+      "replicate_id": "M07",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.8561643835616438,
+      "screen8_terminal_visits": 10,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1664,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 16,
+      "qualification_calls": 640,
+      "replicate_id": "M08",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 0,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1424,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 10,
+      "qualification_calls": 400,
+      "replicate_id": "M08",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 6,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1304,
+      "extended24_terminal_visits": 5,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 5,
+      "qualification_calls": 280,
+      "replicate_id": "M08",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 6,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1504,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 2,
+      "formal_admissions_per_1000_calls": 1.3297872340425532,
+      "fulltrain_visits": 12,
+      "qualification_calls": 480,
+      "replicate_id": "M08",
+      "scoped_new_admissions": 2,
+      "scoped_new_admissions_per_1000_calls": 1.3297872340425532,
+      "screen8_terminal_visits": 4,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 2
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1536,
+      "extended24_terminal_visits": 2,
+      "formal_admissions": 2,
+      "formal_admissions_per_1000_calls": 1.3020833333333333,
+      "fulltrain_visits": 12,
+      "qualification_calls": 512,
+      "replicate_id": "M08",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.6510416666666666,
+      "screen8_terminal_visits": 2,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M09",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1256,
+      "extended24_terminal_visits": 2,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 5,
+      "qualification_calls": 232,
+      "replicate_id": "M09",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 9,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1320,
+      "extended24_terminal_visits": 1,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 7,
+      "qualification_calls": 296,
+      "replicate_id": "M09",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 8,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1480,
+      "extended24_terminal_visits": 1,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 11,
+      "qualification_calls": 456,
+      "replicate_id": "M09",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 4,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1432,
+      "extended24_terminal_visits": 3,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 9,
+      "qualification_calls": 408,
+      "replicate_id": "M09",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 4,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "F",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M10",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "P",
+      "charged_economic_calls": 1200,
+      "extended24_terminal_visits": 1,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 4,
+      "qualification_calls": 176,
+      "replicate_id": "M10",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 11,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "R",
+      "charged_economic_calls": 1024,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 0,
+      "qualification_calls": 0,
+      "replicate_id": "M10",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 16,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    },
+    {
+      "arm": "L",
+      "charged_economic_calls": 1184,
+      "extended24_terminal_visits": 0,
+      "formal_admissions": 1,
+      "formal_admissions_per_1000_calls": 0.8445945945945946,
+      "fulltrain_visits": 4,
+      "qualification_calls": 160,
+      "replicate_id": "M10",
+      "scoped_new_admissions": 1,
+      "scoped_new_admissions_per_1000_calls": 0.8445945945945946,
+      "screen8_terminal_visits": 12,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 1
+    },
+    {
+      "arm": "L0",
+      "charged_economic_calls": 1312,
+      "extended24_terminal_visits": 3,
+      "formal_admissions": 0,
+      "formal_admissions_per_1000_calls": 0.0,
+      "fulltrain_visits": 6,
+      "qualification_calls": 288,
+      "replicate_id": "M10",
+      "scoped_new_admissions": 0,
+      "scoped_new_admissions_per_1000_calls": 0.0,
+      "screen8_terminal_visits": 7,
+      "search_calls": 1024,
+      "within_arm_unique_new_behavior_clusters": 0
+    }
+  ],
+  "arms": [
+    "F",
+    "P",
+    "R",
+    "L",
+    "L0"
+  ],
+  "budget": {
+    "infrastructure_calls_excluded_from_experimental_budget": 64,
+    "total_charged_economic_calls": 63696,
+    "total_fixed_search_calls": 51200,
+    "total_qualification_calls": 12496
+  },
+  "closure_receipts": [
+    {
+      "path": "artifacts/prospective/M01/PAPER_V1_M01_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M01",
+      "sha256": "60e1a5580068f979932ee1f3774c019267c8a5dbe933055f7d5e72a228f5e7c6"
+    },
+    {
+      "path": "artifacts/prospective/M02/PAPER_V1_M02_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M02",
+      "sha256": "8dd960ce923b9b3cda86a0401f50507d9113f79b38904700f8d188ccd65e4054"
+    },
+    {
+      "path": "artifacts/prospective/M03/PAPER_V1_M03_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M03",
+      "sha256": "e3ea54a3141caece00104c81b48c484b5cb8456aedbbda6e47a80479bce4c1ac"
+    },
+    {
+      "path": "artifacts/prospective/M04/PAPER_V1_M04_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M04",
+      "sha256": "37c610822358d72b106d8b51dcb48cbd5f456dc26d52cb65fd9aebc85a72eba9"
+    },
+    {
+      "path": "artifacts/prospective/M05/PAPER_V1_M05_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M05",
+      "sha256": "99ab82e609917fb1c5259b3428c810ebb456cd736e8c920d99f57d4c03b3db87"
+    },
+    {
+      "path": "artifacts/prospective/M06/PAPER_V1_M06_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M06",
+      "sha256": "80700749848c50e26a2564fc0382e92d42ca073124008d3a7908d1396457dc3e"
+    },
+    {
+      "path": "artifacts/prospective/M07/PAPER_V1_M07_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M07",
+      "sha256": "cf3b6622ea306d05de297e8ad6d63b0bb817aff3ab88f5c0f93ba98e1c7516dc"
+    },
+    {
+      "path": "artifacts/prospective/M08/PAPER_V1_M08_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M08",
+      "sha256": "afd0fd638b182c1b2b1727aa2dd6fc7d6c04170ee850e87c6330a313d1cd9400"
+    },
+    {
+      "path": "artifacts/prospective/M09/PAPER_V1_M09_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M09",
+      "sha256": "16c1e27f18e491375b9f9ea78d67d1de9e693895e735bd37034fb7972f5c6412"
+    },
+    {
+      "path": "artifacts/prospective/M10/PAPER_V1_M10_MAIN_CLOSURE_V2.json",
+      "replicate_id": "M10",
+      "sha256": "dc535a9543ef1628dba99a4d05ea79dc617458c63f8a9150be21fb80e90f23a9"
+    }
+  ],
+  "decision": "PASS_V2_CARRY_FORWARD_PLUS_FRESH_M08_ALL_TEN_MATCHED_REPLICATES_ASSEMBLED",
+  "inference_guard": "This artifact intentionally does not invent a confidence-interval, permutation, bootstrap, or p-value procedure that was not frozen by repository authority.",
+  "inference_status": "RAW_MATCHED_ENDPOINTS_AND_CONTRAST_VECTORS_ONLY",
+  "oos_read": false,
+  "planned_contrasts": {
+    "formal_admission_rate_per_1000_calls": {
+      "L-F": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 0.7142857142857143,
+            "left": 0.7142857142857143,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M07",
+            "right": 0.0
+          },
+          {
+            "difference": 1.3297872340425532,
+            "left": 1.3297872340425532,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.8445945945945946,
+            "left": 0.8445945945945946,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "formal_admissions_per_1000_calls",
+        "right_arm": "F"
+      },
+      "L-L0": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": -0.78125,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.78125
+          },
+          {
+            "difference": -0.7062146892655368,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.7062146892655368
+          },
+          {
+            "difference": -0.05258545135845749,
+            "left": 0.7142857142857143,
+            "replicate_id": "M03",
+            "right": 0.7668711656441718
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": -0.8561643835616438,
+            "left": 0.0,
+            "replicate_id": "M07",
+            "right": 0.8561643835616438
+          },
+          {
+            "difference": 0.02770390070921991,
+            "left": 1.3297872340425532,
+            "replicate_id": "M08",
+            "right": 1.3020833333333333
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.8445945945945946,
+            "left": 0.8445945945945946,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "formal_admissions_per_1000_calls",
+        "right_arm": "L0"
+      },
+      "L-P": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": -1.4880952380952381,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 1.4880952380952381
+          },
+          {
+            "difference": 0.7142857142857143,
+            "left": 0.7142857142857143,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": -1.6891891891891893,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 1.6891891891891893
+          },
+          {
+            "difference": -2.4193548387096775,
+            "left": 0.0,
+            "replicate_id": "M07",
+            "right": 2.4193548387096775
+          },
+          {
+            "difference": 1.3297872340425532,
+            "left": 1.3297872340425532,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.8445945945945946,
+            "left": 0.8445945945945946,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "formal_admissions_per_1000_calls",
+        "right_arm": "P"
+      },
+      "L-R": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": -0.702247191011236,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.702247191011236
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 0.7142857142857143,
+            "left": 0.7142857142857143,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": -0.7911392405063291,
+            "left": 0.0,
+            "replicate_id": "M07",
+            "right": 0.7911392405063291
+          },
+          {
+            "difference": 1.3297872340425532,
+            "left": 1.3297872340425532,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.8445945945945946,
+            "left": 0.8445945945945946,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "formal_admissions_per_1000_calls",
+        "right_arm": "R"
+      },
+      "P-F": {
+        "left_arm": "P",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 1.4880952380952381,
+            "left": 1.4880952380952381,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 1.6891891891891893,
+            "left": 1.6891891891891893,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": 2.4193548387096775,
+            "left": 2.4193548387096775,
+            "replicate_id": "M07",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "formal_admissions_per_1000_calls",
+        "right_arm": "F"
+      },
+      "R-F": {
+        "left_arm": "R",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.702247191011236,
+            "left": 0.702247191011236,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": 0.7911392405063291,
+            "left": 0.7911392405063291,
+            "replicate_id": "M07",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "formal_admissions_per_1000_calls",
+        "right_arm": "F"
+      },
+      "R-P": {
+        "left_arm": "R",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.702247191011236,
+            "left": 0.702247191011236,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": -1.4880952380952381,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 1.4880952380952381
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": -1.6891891891891893,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 1.6891891891891893
+          },
+          {
+            "difference": -1.6282155982033484,
+            "left": 0.7911392405063291,
+            "replicate_id": "M07",
+            "right": 2.4193548387096775
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "formal_admissions_per_1000_calls",
+        "right_arm": "P"
+      }
+    },
+    "primary_scoped_new_rate_per_1000_calls": {
+      "L-F": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 0.7142857142857143,
+            "left": 0.7142857142857143,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M07",
+            "right": 0.0
+          },
+          {
+            "difference": 1.3297872340425532,
+            "left": 1.3297872340425532,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.8445945945945946,
+            "left": 0.8445945945945946,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "scoped_new_admissions_per_1000_calls",
+        "right_arm": "F"
+      },
+      "L-L0": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": -0.78125,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.78125
+          },
+          {
+            "difference": -0.7062146892655368,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.7062146892655368
+          },
+          {
+            "difference": -0.05258545135845749,
+            "left": 0.7142857142857143,
+            "replicate_id": "M03",
+            "right": 0.7668711656441718
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": -0.8561643835616438,
+            "left": 0.0,
+            "replicate_id": "M07",
+            "right": 0.8561643835616438
+          },
+          {
+            "difference": 0.6787455673758865,
+            "left": 1.3297872340425532,
+            "replicate_id": "M08",
+            "right": 0.6510416666666666
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.8445945945945946,
+            "left": 0.8445945945945946,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "scoped_new_admissions_per_1000_calls",
+        "right_arm": "L0"
+      },
+      "L-P": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": -0.7440476190476191,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.7440476190476191
+          },
+          {
+            "difference": 0.7142857142857143,
+            "left": 0.7142857142857143,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": -1.6891891891891893,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 1.6891891891891893
+          },
+          {
+            "difference": -1.6129032258064515,
+            "left": 0.0,
+            "replicate_id": "M07",
+            "right": 1.6129032258064515
+          },
+          {
+            "difference": 1.3297872340425532,
+            "left": 1.3297872340425532,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.8445945945945946,
+            "left": 0.8445945945945946,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "scoped_new_admissions_per_1000_calls",
+        "right_arm": "P"
+      },
+      "L-R": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": -0.702247191011236,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.702247191011236
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 0.7142857142857143,
+            "left": 0.7142857142857143,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": -0.7911392405063291,
+            "left": 0.0,
+            "replicate_id": "M07",
+            "right": 0.7911392405063291
+          },
+          {
+            "difference": 1.3297872340425532,
+            "left": 1.3297872340425532,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.8445945945945946,
+            "left": 0.8445945945945946,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "scoped_new_admissions_per_1000_calls",
+        "right_arm": "R"
+      },
+      "P-F": {
+        "left_arm": "P",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 0.7440476190476191,
+            "left": 0.7440476190476191,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 1.6891891891891893,
+            "left": 1.6891891891891893,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": 1.6129032258064515,
+            "left": 1.6129032258064515,
+            "replicate_id": "M07",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "scoped_new_admissions_per_1000_calls",
+        "right_arm": "F"
+      },
+      "R-F": {
+        "left_arm": "R",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.702247191011236,
+            "left": 0.702247191011236,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 0.0
+          },
+          {
+            "difference": 0.7911392405063291,
+            "left": 0.7911392405063291,
+            "replicate_id": "M07",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "scoped_new_admissions_per_1000_calls",
+        "right_arm": "F"
+      },
+      "R-P": {
+        "left_arm": "R",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.702247191011236,
+            "left": 0.702247191011236,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": -0.7440476190476191,
+            "left": 0.0,
+            "replicate_id": "M02",
+            "right": 0.7440476190476191
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M03",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": -1.6891891891891893,
+            "left": 0.0,
+            "replicate_id": "M06",
+            "right": 1.6891891891891893
+          },
+          {
+            "difference": -0.8217639853001224,
+            "left": 0.7911392405063291,
+            "replicate_id": "M07",
+            "right": 1.6129032258064515
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M08",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "scoped_new_admissions_per_1000_calls",
+        "right_arm": "P"
+      }
+    },
+    "qualification_calls": {
+      "L-F": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": 400.0,
+            "left": 400.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 440.0,
+            "left": 440.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 112.0,
+            "left": 376.0,
+            "replicate_id": "M03",
+            "right": 264.0
+          },
+          {
+            "difference": 40.0,
+            "left": 40.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 320.0,
+            "left": 320.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": -344.0,
+            "left": 296.0,
+            "replicate_id": "M06",
+            "right": 640.0
+          },
+          {
+            "difference": -112.0,
+            "left": 128.0,
+            "replicate_id": "M07",
+            "right": 240.0
+          },
+          {
+            "difference": -160.0,
+            "left": 480.0,
+            "replicate_id": "M08",
+            "right": 640.0
+          },
+          {
+            "difference": 456.0,
+            "left": 456.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 160.0,
+            "left": 160.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "qualification_calls",
+        "right_arm": "F"
+      },
+      "L-L0": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": 144.0,
+            "left": 400.0,
+            "replicate_id": "M01",
+            "right": 256.0
+          },
+          {
+            "difference": 48.0,
+            "left": 440.0,
+            "replicate_id": "M02",
+            "right": 392.0
+          },
+          {
+            "difference": 96.0,
+            "left": 376.0,
+            "replicate_id": "M03",
+            "right": 280.0
+          },
+          {
+            "difference": -248.0,
+            "left": 40.0,
+            "replicate_id": "M04",
+            "right": 288.0
+          },
+          {
+            "difference": -40.0,
+            "left": 320.0,
+            "replicate_id": "M05",
+            "right": 360.0
+          },
+          {
+            "difference": -224.0,
+            "left": 296.0,
+            "replicate_id": "M06",
+            "right": 520.0
+          },
+          {
+            "difference": -16.0,
+            "left": 128.0,
+            "replicate_id": "M07",
+            "right": 144.0
+          },
+          {
+            "difference": -32.0,
+            "left": 480.0,
+            "replicate_id": "M08",
+            "right": 512.0
+          },
+          {
+            "difference": 48.0,
+            "left": 456.0,
+            "replicate_id": "M09",
+            "right": 408.0
+          },
+          {
+            "difference": -128.0,
+            "left": 160.0,
+            "replicate_id": "M10",
+            "right": 288.0
+          }
+        ],
+        "metric": "qualification_calls",
+        "right_arm": "L0"
+      },
+      "L-P": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": 320.0,
+            "left": 400.0,
+            "replicate_id": "M01",
+            "right": 80.0
+          },
+          {
+            "difference": 120.0,
+            "left": 440.0,
+            "replicate_id": "M02",
+            "right": 320.0
+          },
+          {
+            "difference": 200.0,
+            "left": 376.0,
+            "replicate_id": "M03",
+            "right": 176.0
+          },
+          {
+            "difference": 40.0,
+            "left": 40.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 48.0,
+            "left": 320.0,
+            "replicate_id": "M05",
+            "right": 272.0
+          },
+          {
+            "difference": 136.0,
+            "left": 296.0,
+            "replicate_id": "M06",
+            "right": 160.0
+          },
+          {
+            "difference": -88.0,
+            "left": 128.0,
+            "replicate_id": "M07",
+            "right": 216.0
+          },
+          {
+            "difference": 80.0,
+            "left": 480.0,
+            "replicate_id": "M08",
+            "right": 400.0
+          },
+          {
+            "difference": 224.0,
+            "left": 456.0,
+            "replicate_id": "M09",
+            "right": 232.0
+          },
+          {
+            "difference": -16.0,
+            "left": 160.0,
+            "replicate_id": "M10",
+            "right": 176.0
+          }
+        ],
+        "metric": "qualification_calls",
+        "right_arm": "P"
+      },
+      "L-R": {
+        "left_arm": "L",
+        "matched_replicate_differences": [
+          {
+            "difference": 0.0,
+            "left": 400.0,
+            "replicate_id": "M01",
+            "right": 400.0
+          },
+          {
+            "difference": 320.0,
+            "left": 440.0,
+            "replicate_id": "M02",
+            "right": 120.0
+          },
+          {
+            "difference": 96.0,
+            "left": 376.0,
+            "replicate_id": "M03",
+            "right": 280.0
+          },
+          {
+            "difference": 40.0,
+            "left": 40.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": -40.0,
+            "left": 320.0,
+            "replicate_id": "M05",
+            "right": 360.0
+          },
+          {
+            "difference": 136.0,
+            "left": 296.0,
+            "replicate_id": "M06",
+            "right": 160.0
+          },
+          {
+            "difference": -112.0,
+            "left": 128.0,
+            "replicate_id": "M07",
+            "right": 240.0
+          },
+          {
+            "difference": 200.0,
+            "left": 480.0,
+            "replicate_id": "M08",
+            "right": 280.0
+          },
+          {
+            "difference": 160.0,
+            "left": 456.0,
+            "replicate_id": "M09",
+            "right": 296.0
+          },
+          {
+            "difference": 160.0,
+            "left": 160.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "qualification_calls",
+        "right_arm": "R"
+      },
+      "P-F": {
+        "left_arm": "P",
+        "matched_replicate_differences": [
+          {
+            "difference": 80.0,
+            "left": 80.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 320.0,
+            "left": 320.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": -88.0,
+            "left": 176.0,
+            "replicate_id": "M03",
+            "right": 264.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 272.0,
+            "left": 272.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": -480.0,
+            "left": 160.0,
+            "replicate_id": "M06",
+            "right": 640.0
+          },
+          {
+            "difference": -24.0,
+            "left": 216.0,
+            "replicate_id": "M07",
+            "right": 240.0
+          },
+          {
+            "difference": -240.0,
+            "left": 400.0,
+            "replicate_id": "M08",
+            "right": 640.0
+          },
+          {
+            "difference": 232.0,
+            "left": 232.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 176.0,
+            "left": 176.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "qualification_calls",
+        "right_arm": "F"
+      },
+      "R-F": {
+        "left_arm": "R",
+        "matched_replicate_differences": [
+          {
+            "difference": 400.0,
+            "left": 400.0,
+            "replicate_id": "M01",
+            "right": 0.0
+          },
+          {
+            "difference": 120.0,
+            "left": 120.0,
+            "replicate_id": "M02",
+            "right": 0.0
+          },
+          {
+            "difference": 16.0,
+            "left": 280.0,
+            "replicate_id": "M03",
+            "right": 264.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 360.0,
+            "left": 360.0,
+            "replicate_id": "M05",
+            "right": 0.0
+          },
+          {
+            "difference": -480.0,
+            "left": 160.0,
+            "replicate_id": "M06",
+            "right": 640.0
+          },
+          {
+            "difference": 0.0,
+            "left": 240.0,
+            "replicate_id": "M07",
+            "right": 240.0
+          },
+          {
+            "difference": -360.0,
+            "left": 280.0,
+            "replicate_id": "M08",
+            "right": 640.0
+          },
+          {
+            "difference": 296.0,
+            "left": 296.0,
+            "replicate_id": "M09",
+            "right": 0.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M10",
+            "right": 0.0
+          }
+        ],
+        "metric": "qualification_calls",
+        "right_arm": "F"
+      },
+      "R-P": {
+        "left_arm": "R",
+        "matched_replicate_differences": [
+          {
+            "difference": 320.0,
+            "left": 400.0,
+            "replicate_id": "M01",
+            "right": 80.0
+          },
+          {
+            "difference": -200.0,
+            "left": 120.0,
+            "replicate_id": "M02",
+            "right": 320.0
+          },
+          {
+            "difference": 104.0,
+            "left": 280.0,
+            "replicate_id": "M03",
+            "right": 176.0
+          },
+          {
+            "difference": 0.0,
+            "left": 0.0,
+            "replicate_id": "M04",
+            "right": 0.0
+          },
+          {
+            "difference": 88.0,
+            "left": 360.0,
+            "replicate_id": "M05",
+            "right": 272.0
+          },
+          {
+            "difference": 0.0,
+            "left": 160.0,
+            "replicate_id": "M06",
+            "right": 160.0
+          },
+          {
+            "difference": 24.0,
+            "left": 240.0,
+            "replicate_id": "M07",
+            "right": 216.0
+          },
+          {
+            "difference": -120.0,
+            "left": 280.0,
+            "replicate_id": "M08",
+            "right": 400.0
+          },
+          {
+            "difference": 64.0,
+            "left": 296.0,
+            "replicate_id": "M09",
+            "right": 232.0
+          },
+          {
+            "difference": -176.0,
+            "left": 0.0,
+            "replicate_id": "M10",
+            "right": 176.0
+          }
+        ],
+        "metric": "qualification_calls",
+        "right_arm": "P"
+      }
+    }
+  },
+  "q0_read": false,
+  "replicates": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08",
+    "M09",
+    "M10"
+  ],
+  "schema": "paper-v1-main-v2-final-matched-matrix-v1",
+  "scientific_execution_git_heads": [
+    "50535d2c6406575db5d8fe1f116c67afd71fadc5",
+    "8635324e37d9afef54e6ee8ebe454cb99f564bd9",
+    "cf7dc7b46c1736be97cdaf56011a3becfafc60ec"
+  ],
+  "v2_authority": {
+    "carry_forward_audit_path": "artifacts\\prospective\\MAIN_INCIDENTS\\M08_V1_FROZEN_CONTRACT_CONTRADICTION_20260918\\PAPER_V1_MAIN_V2_CARRY_FORWARD_AUDIT.json",
+    "carry_forward_audit_sha256": "a093a0c25978e433d5dfaa192c3f94463f339d7cada3c862959678335c91bc60",
+    "carry_forward_replicates": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M09",
+      "M10"
+    ],
+    "economic_outcomes_used_to_choose_carry_forward": false,
+    "execution_binding_path": "protocol\\PAPER_V1_MAIN_V2_EXECUTION_BINDING.json",
+    "execution_binding_sha256": "f797a64029b8034d19a71641ddfddfd7f328e3848255d2b64d69ea5ad961b90e",
+    "fresh_m08_closure_sha256": "afd0fd638b182c1b2b1727aa2dd6fc7d6c04170ee850e87c6330a313d1cd9400",
+    "fresh_m08_execution_git_head": "50535d2c6406575db5d8fe1f116c67afd71fadc5",
+    "fresh_v2_replicates": [
+      "M08"
+    ],
+    "underlying_v1_compatible_matrix_sha256": "c03bd078922f2e298ff80b87c09ae83d36aeda094db7b2c474b6aebe6d7c03ab",
+    "v2_selftest_path": "artifacts\\prospective\\MAIN_INCIDENTS\\M08_V1_FROZEN_CONTRACT_CONTRADICTION_20260918\\PAPER_V1_MAIN_V2_MECHANISM_EXHAUSTION_SELFTEST.json",
+    "v2_selftest_sha256": "165e54c9e7ef4e58c83cc4443f50c6659d58e145ec03fb39570c7e59cad37e3b"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "paper-v1-behavior-comparator-v1",
+  "decision": "FROZEN_PRE_PILOT_TARGET_WEIGHT_BEHAVIOR_COMPARATOR",
+  "surface": "full-train realized target weights on the common coordinate/eligibility authority",
+  "compatibility_requirements": {
+    "shape_equal": true,
+    "coordinate_fingerprint_equal": true,
+    "eligibility_fingerprint_equal": true,
+    "dtype_comparison": "float64"
+  },
+  "duplicate_rules_any": [
+    "canonical float64 weights SHA256 exact equality",
+    "cosine_similarity >= 0.98 AND active_coordinate_jaccard >= 0.95"
+  ],
+  "active_coordinate_epsilon": 1e-14,
+  "cosine_threshold": 0.98,
+  "active_coordinate_jaccard_threshold": 0.95,
+  "incompatible_authority_result": "UNRESOLVED_INCOMPATIBLE_BEHAVIOR_AUTHORITY",
+  "prior_reference_new_label": "NEW_VS_PAPER_V1_RECONSTRUCTIBLE_REFERENCE",
+  "duplicate_label": "DUPLICATE_VS_PAPER_V1_RECONSTRUCTIBLE_REFERENCE",
+  "cross_arm_clustering": {
+    "order_independent": true,
+    "edge_rule": "same frozen duplicate comparator",
+    "cluster_rule": "connected components over duplicate edges",
+    "exclusive_cluster_ownership": false
+  },
+  "firewall": {"q0_read": false, "oos_read": false}
+}
